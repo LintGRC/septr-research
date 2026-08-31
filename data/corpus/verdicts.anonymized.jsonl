@@ -1,0 +1,361 @@
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-015", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-015", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-015", "task": "2"}
+{"verdict": "drop", "confidence": "high", "check_id": "openai_key", "reason": "docs setup template with short placeholder key", "repo": "app-062", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "openai_key", "reason": "docs setup template with short placeholder key", "repo": "app-062", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "openai_key", "reason": "long sk-proj key captured in qiling emulation artifact", "repo": "app-062", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_gemini_key", "reason": "real Gemini key captured in qiling emulation artifact", "repo": "app-062", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "DATABASE_URL captured in qiling emulation artifact", "repo": "app-062", "task": "4"}
+{"verdict": "drop", "confidence": "high", "check_id": "openai_key", "reason": "short placeholder key in docs usage example", "repo": "app-062", "task": "5"}
+{"verdict": "drop", "confidence": "high", "check_id": "openai_key", "reason": "short placeholder key in docs usage example", "repo": "app-062", "task": "6"}
+{"verdict": "drop", "confidence": "high", "check_id": "openai_key", "reason": "docs setup template instructing to replace placeholder key", "repo": "app-062", "task": "7"}
+{"verdict": "drop", "confidence": "high", "check_id": "openai_key", "reason": "docs setup template instructing to replace placeholder key", "repo": "app-062", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "10"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "11"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "12"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "13"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "14"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "15"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "16"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "17"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "18"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "19"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "20"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "21"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "22"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "23"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "24"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "25"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "26"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "27"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "28"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "29"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "30"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "31"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "32"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "33"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "34"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "35"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "36"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "37"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "38"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "39"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "40"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "41"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "42"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "43"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "44"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "45"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "46"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "47"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "48"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "49"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "50"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "51"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "52"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "53"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-072", "task": "9"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-079", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-089", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-091", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-101", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-106", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-106", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-118", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-149", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "hardcoded ENCRYPTION_KEY constant in faceEncryption.ts source", "repo": "app-149", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-149", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-202", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "resend_api_key", "reason": "real 36-char Resend key hardcoded in edge function", "repo": "app-230", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "10"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "11"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "12"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-230", "task": "9"}
+{"verdict": "drop", "confidence": "high", "check_id": "google_api_key", "reason": "Firebase client API key used by identitytoolkit smoke script (public by design)", "repo": "app-265", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "10"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "11"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "12"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "13"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "14"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "15"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "16"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "17"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "18"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "19"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "20"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "21"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "22"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "23"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "24"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "25"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "26"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "27"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "28"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "29"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "30"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "31"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "32"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "33"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "34"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "35"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "36"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "37"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "38"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "39"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "40"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "41"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "42"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "43"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "44"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "45"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "46"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "47"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-280", "task": "9"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in JS script", "repo": "app-289", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in JS script", "repo": "app-289", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-289", "task": "10"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-289", "task": "11"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-289", "task": "12"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-289", "task": "13"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-289", "task": "14"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-289", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in SUPABASE_CONFIG.md docs", "repo": "app-289", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-289", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-289", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-289", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-289", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key fallback in JS script", "repo": "app-289", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-289", "task": "9"}
+{"verdict": "drop", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "RLS disabled then re-enabled in same migration", "repo": "app-298", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-298", "task": "10"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-298", "task": "11"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-298", "task": "12"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "13"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-298", "task": "14"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "15"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "16"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "17"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "18"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "19"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-298", "task": "8"}
+{"verdict": "drop", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "RLS disabled then re-enabled in same migration", "repo": "app-298", "task": "9"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-302", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "docs example with placeholder API key", "repo": "app-304", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "shared Community API key - open for everyone", "repo": "app-304", "task": "1"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "example file with placeholder API key", "repo": "app-304", "task": "10"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "example file with placeholder API key", "repo": "app-304", "task": "11"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "README example with placeholder API key", "repo": "app-304", "task": "12"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "example file with placeholder API key", "repo": "app-304", "task": "13"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "example file with placeholder API key", "repo": "app-304", "task": "14"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "README example with placeholder API key", "repo": "app-304", "task": "15"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "README example with placeholder API key", "repo": "app-304", "task": "16"}
+{"verdict": "drop", "confidence": "medium", "check_id": "generic_secret", "reason": "shared Community API key in archived demo fixture", "repo": "app-304", "task": "2"}
+{"verdict": "drop", "confidence": "medium", "check_id": "generic_secret", "reason": "shared Community API key in archived demo fixture", "repo": "app-304", "task": "3"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "shared Community API key in SDK component", "repo": "app-304", "task": "4"}
+{"verdict": "drop", "confidence": "medium", "check_id": "generic_secret", "reason": "shared Community API key in archived demo agent", "repo": "app-304", "task": "5"}
+{"verdict": "drop", "confidence": "medium", "check_id": "generic_secret", "reason": "shared Community API key in archived demo agent", "repo": "app-304", "task": "6"}
+{"verdict": "drop", "confidence": "medium", "check_id": "generic_secret", "reason": "shared Community API key in archived demo agent", "repo": "app-304", "task": "7"}
+{"verdict": "drop", "confidence": "medium", "check_id": "generic_secret", "reason": "test fixture with demo key in archived admin panel", "repo": "app-304", "task": "8"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "example file with placeholder API key", "repo": "app-304", "task": "9"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-312", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-319", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "hardcoded MongoDB connection string fallback in code", "repo": "app-345", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-360", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-360", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-411", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "stripe_live_secret", "reason": "real-format sk_live key in script/manifest", "repo": "app-422", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "stripe_live_secret", "reason": "real-format sk_live key in script/manifest", "repo": "app-422", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "stripe_live_secret", "reason": "real-format sk_live key in script/manifest", "repo": "app-422", "task": "10"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration intentionally disables RLS on ported schema", "repo": "app-422", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration intentionally disables RLS on ported schema", "repo": "app-422", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration intentionally disables RLS on ported schema", "repo": "app-422", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration intentionally disables RLS on ported schema", "repo": "app-422", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration intentionally disables RLS on ported schema", "repo": "app-422", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "stripe_live_secret", "reason": "real-format sk_live key in script/manifest", "repo": "app-422", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "stripe_live_secret", "reason": "real-format sk_live key in script/manifest", "repo": "app-422", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_gemini_key", "reason": "real Gemini key in integration/test code", "repo": "app-422", "task": "9"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "docs placeholder value (sk_test_your_secret_key_here)", "repo": "app-423", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "docs placeholder key with replace-with-actual-key instruction", "repo": "app-423", "task": "1"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "docs placeholder key with replace-with-actual-key instruction", "repo": "app-423", "task": "2"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "docs placeholder key with replace-with-actual-key instruction", "repo": "app-423", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "resend_api_key", "reason": "real-format 36-char Resend key in docs quick reference", "repo": "app-423", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-423", "task": "5"}
+{"verdict": "drop", "confidence": "high", "check_id": "google_api_key", "reason": "Firebase client config key (public by design)", "repo": "app-468", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "google_api_key", "reason": "Firebase client config key (public by design)", "repo": "app-468", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "1"}
+{"verdict": "drop", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "RLS disabled then re-enabled in same migration", "repo": "app-476", "task": "10"}
+{"verdict": "drop", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "RLS disabled then re-enabled in same migration", "repo": "app-476", "task": "11"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "12"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "13"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "14"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "15"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "real Facebook client_secret in UPDATE migration", "repo": "app-476", "task": "16"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "17"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "18"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "19"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-476", "task": "20"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-476", "task": "21"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-476", "task": "22"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-476", "task": "23"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-476", "task": "6"}
+{"verdict": "drop", "confidence": "medium", "check_id": "supabase_rls_disabled", "reason": "RLS disabled then re-enabled with safe policies in same migration", "repo": "app-476", "task": "7"}
+{"verdict": "drop", "confidence": "medium", "check_id": "supabase_rls_disabled", "reason": "RLS disabled then re-enabled with safe policies in same migration", "repo": "app-476", "task": "8"}
+{"verdict": "drop", "confidence": "medium", "check_id": "supabase_rls_disabled", "reason": "RLS disabled then re-enabled with safe policies in same migration", "repo": "app-476", "task": "9"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-499", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-510", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-517", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-527", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "docs test fixture with test@example.com credentials", "repo": "app-530", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "docs test fixture with test@example.com credentials", "repo": "app-530", "task": "1"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "docs test fixture with test@example.com credentials", "repo": "app-530", "task": "2"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "docs test fixture with test@example.com credentials", "repo": "app-530", "task": "3"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "docs test fixture with test@example.com credentials", "repo": "app-530", "task": "4"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "docs test fixture with test@example.com credentials", "repo": "app-530", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "10"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "11"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "12"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "13"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "14"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "15"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-538", "task": "9"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-560", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration disables RLS and leaves it off (no re-enable in window)", "repo": "app-581", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-581", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-601", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-610", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_gemini_key", "reason": "real Gemini key in solar.html integration code", "repo": "app-659", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-696", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-722", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-724", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-728", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "clerk_live_secret", "reason": "real-format Clerk sk_live key in docs/script", "repo": "app-728", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "clerk_live_secret", "reason": "real-format Clerk sk_live key in docs/script", "repo": "app-728", "task": "10"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-728", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in deployment docs", "repo": "app-728", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-728", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "clerk_live_secret", "reason": "real-format Clerk sk_live key in docs/script", "repo": "app-728", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "clerk_test_secret", "reason": "real-format Clerk sk_test key in configure-secrets.sh", "repo": "app-728", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "real-format secret key hardcoded in configure-secrets.sh", "repo": "app-728", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in deployment docs", "repo": "app-728", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-728", "task": "9"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-752", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in edge function", "repo": "app-752", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "10"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "11"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "12"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "13"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "14"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "15"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "16"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "17"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "18"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "19"}
+{"verdict": "keep", "confidence": "high", "check_id": "stripe_test_secret", "reason": "real-format Paystack secret key in edge function", "repo": "app-752", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "20"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "21"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "22"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "23"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "24"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "25"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "26"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "27"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "28"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "29"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "30"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "31"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "32"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "33"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "34"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "35"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "36"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "37"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "38"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "39"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "40"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "41"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "42"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "43"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "44"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "45"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "46"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "47"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "48"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "49"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "50"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "51"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "52"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "53"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "54"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "55"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "56"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "57"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "58"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "59"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "60"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "61"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in admin.ts fallback", "repo": "app-752", "task": "62"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-752", "task": "63"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-752", "task": "64"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_service_role", "reason": "real service_role key in n8n workflow JSON", "repo": "app-752", "task": "9"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "helm values placeholder marked Change this!", "repo": "app-755", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-758", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-758", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-779", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-799", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-806", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "hardcoded Supabase DB connection string fallback in code", "repo": "app-845", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "db_connection_string", "reason": "docs template with [YOUR-PASSWORD] placeholder", "repo": "app-845", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "public-by-design anon JWT (role-verified) in client config", "repo": "app-866", "task": "0"}

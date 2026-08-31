@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI apps leak through code, not just .env — Septr corpus study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #2563eb; --amber: #d97706; --green: #059669;
+    --red: #dc2626; --gray-50: #fafafa; --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb; --gray-400: #9ca3af;
+    --gray-500: #6b7280; --gray-900: #111827;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Helvetica, Arial, sans-serif;
+    color: var(--gray-900); background: #fff; line-height: 1.65;
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+
+  nav.top { padding: 20px 0; border-bottom: 1px solid var(--gray-200); }
+  nav.top .inner { display: flex; align-items: center; justify-content: space-between; }
+  nav.top .brand { font-weight: 800; font-size: 16px; color: var(--gray-900); text-decoration: none; }
+  nav.top .links { display: flex; gap: 28px; }
+  nav.top .links a { font-size: 14px; font-weight: 500; color: var(--gray-500); text-decoration: none; }
+  nav.top .links a:hover { color: var(--gray-900); }
+  nav.top .links a.here { color: var(--gray-900); font-weight: 600; }
+
+  header.hero { padding: 96px 0 72px; }
+  .kicker { text-transform: uppercase; letter-spacing: .14em; font-size: 12px; font-weight: 600; color: var(--gray-400); margin-bottom: 20px; }
+  h1 { font-size: 52px; line-height: 1.1; letter-spacing: -.03em; font-weight: 800; max-width: 820px; }
+  h1 .accent { color: var(--blue); }
+  .sub { font-size: 19px; color: var(--gray-500); margin-top: 20px; max-width: 700px; line-height: 1.7; }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-top: 48px; }
+  .stat { background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 14px; padding: 24px 26px; }
+  .stat .num { font-size: 40px; font-weight: 800; letter-spacing: -.03em; line-height: 1; }
+  .stat .lbl { font-size: 14px; color: var(--gray-500); margin-top: 8px; line-height: 1.4; }
+  .stat.amber .num { color: var(--amber); } .stat.green .num { color: var(--green); }
+  .stat.red .num { color: var(--red); } .stat.blue .num { color: var(--blue); }
+
+  section.story { padding: 80px 0; border-top: 1px solid var(--gray-200); }
+  section.story:first-of-type { border-top: none; }
+  h2 { font-size: 34px; letter-spacing: -.02em; font-weight: 800; margin-bottom: 12px; line-height: 1.2; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; background: var(--gray-100); color: var(--gray-500); border-radius: 999px; padding: 5px 12px; margin-left: 12px; vertical-align: middle; position: relative; top: -2px; }
+  .lead { font-size: 18px; color: var(--gray-500); max-width: 740px; margin-bottom: 36px; line-height: 1.7; }
+  .story img.chart { width: 100%; height: auto; border-radius: 14px; border: 1px solid var(--gray-200); display: block; box-shadow: 0 1px 3px rgba(0,0,0,.04); }
+  .callout { margin-top: 36px; background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: 14px; padding: 24px 28px; font-size: 16px; border-left: 4px solid var(--blue); line-height: 1.7; }
+  .callout.amber { border-left-color: var(--amber); }
+  .callout.red { border-left-color: var(--red); }
+  .callout.green { border-left-color: var(--green); }
+  .callout strong { font-weight: 700; }
+
+  section.compare { padding: 80px 0; border-top: 1px solid var(--gray-200); }
+  section.compare h2 { margin-bottom: 20px; }
+  section.compare p { font-size: 18px; color: var(--gray-500); max-width: 760px; margin-bottom: 20px; line-height: 1.7; }
+  table.cmp { width: 100%; border-collapse: collapse; margin: 24px 0 8px; font-size: 15px; }
+  table.cmp th, table.cmp td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--gray-200); }
+  table.cmp th { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--gray-400); font-weight: 600; }
+  table.cmp td b { color: var(--gray-900); }
+  table.cmp td .hl { color: var(--amber); font-weight: 700; }
+
+  section.method, section.download { padding: 80px 0; border-top: 1px solid var(--gray-200); }
+  section.method h2, section.download h2 { margin-bottom: 20px; }
+  section.method p, section.download p { font-size: 16px; color: var(--gray-500); max-width: 780px; margin-bottom: 18px; line-height: 1.8; }
+  section.method code { font-family: 'SF Mono', 'Fira Code', monospace; font-size: 14px; background: var(--gray-100); padding: 2px 7px; border-radius: 5px; }
+  .dl-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .dl-card { display: block; padding: 18px 22px; border-radius: 12px; border: 1px solid var(--gray-200); text-decoration: none; }
+  .dl-card:hover { border-color: var(--blue); }
+  .dl-card .name { font-size: 14px; font-weight: 600; color: var(--gray-900); }
+  .dl-card .desc { font-size: 13px; color: var(--gray-400); margin-top: 4px; }
+
+  footer { background: var(--gray-900); color: var(--gray-400); padding: 56px 0 64px; font-size: 14px; }
+  footer h3 { color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 12px; }
+  footer a { color: #93c5fd; text-decoration: none; }
+  footer .cols { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; }
+  footer .copy { margin-top: 36px; padding-top: 24px; border-top: 1px solid #374151; font-size: 13px; }
+
+  @media (max-width: 720px) {
+    h1 { font-size: 34px; } h2 { font-size: 26px; }
+    header.hero { padding: 64px 0 48px; }
+    section.story, section.compare, section.method, section.download { padding: 56px 0; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    footer .cols { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap inner">
+    <a class="brand" href="/">Septr</a>
+    <div class="links">
+      <a href="../index.html">.env problem</a>
+      <a class="here" href="index.html">Code leaks</a>
+      <a href="../aicoded/index.html">Generators</a>
+      <a href="../landscape/index.html">Landscape</a>
+      <a href="../comparison/index.html">One engine</a>
+      <a href="../../studies/CORPUS_STUDY_V0.md">Full write-up</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Septr research · N = 513 v0.dev apps · August 2026 · second population</div>
+    <h1>AI apps leak <span class="accent">through code, not just .env</span></h1>
+    <p class="sub">
+      Lovable leaks through <code>.env</code> because Lovable builds
+      env-wired apps. We ran the same engine on v0 to ask: does a
+      different generator change the story? It inverts it — v0's leak
+      mechanics are in the code, not the environment.
+    </p>
+    <div class="stats">
+      <div class="stat green">
+        <div class="num">7.0%</div>
+        <div class="lbl">commit .env — 4× fewer than Lovable, because v0 builds frontend-first</div>
+      </div>
+      <div class="stat blue">
+        <div class="num">64.7%</div>
+        <div class="lbl">fully clean — the cleanest generator population so far</div>
+      </div>
+      <div class="stat red">
+        <div class="num">15.4%</div>
+        <div class="lbl">tier A — data access via hardcoded code, not .env</div>
+      </div>
+      <div class="stat amber">
+        <div class="num">93.4</div>
+        <div class="lbl">mean score — good grades, different mechanics</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="story">
+  <div class="wrap">
+    <h2>The .env story ends here <span class="badge">nearly a non-event</span></h2>
+    <p class="lead">
+      Where Lovable's 27.5% made .env the headline, v0's 7.0% confirms
+      the pattern: the exposure tracks the generator's workflow, not AI
+      coding itself. v0 outputs frontend components — fewer backends,
+      fewer env files to wire, fewer env files to leak.
+    </p>
+    <img class="chart" src="../charts-v0/01-waffle.png"
+         alt="Waffle chart: 36 of 513 repos commit a .env file (7.0%)">
+    <div class="callout amber">
+      Fewer env files does not mean cleaner repos. <strong>38.2% of v0
+      repos have no root .gitignore</strong> (Lovable: 10.4%) and 24.4%
+      carry duplicated file families (Lovable: 8.9%). v0 generates
+      sloppier scaffolding — the question is what it leaks instead.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>Most apps are clean <span class="badge">but the story is different</span></h2>
+    <p class="lead">
+      82.3% grade A and 64.7% are perfectly clean. The F rate is 4.7%,
+      below Lovable's 7.3%. But the A-band is clean for a different
+      reason: v0 does not default to Supabase — there are almost no anon
+      keys, no service-role JWTs, no RLS stories. The credential surface
+      is smaller. The question is where it hides.
+    </p>
+    <img class="chart" src="../charts-v0/02-grades.png"
+         alt="Security grade distribution: A 422 (82.3%), B 14, C 49, D 4, F 24 (4.7%)">
+    <div class="callout green">
+      Clean grades, but different reasons: v0 generates frontend components
+      without env wiring or Supabase defaults. Where Lovable's clean
+      apps are safe because their env is public-by-design, v0's clean apps
+      are safe because they never wired the dangerous bits in the first
+      place.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>The leak is in the code <span class="badge">DB strings, not anon keys</span></h2>
+    <p class="lead">
+      Lovable's biggest class is Supabase anon keys. v0's is DB connection
+      strings — nearly triple Lovable's rate (12.7% vs 4.7%). These are
+      hardcoded in source files, not in .env. Live MongoDB Atlas URIs and
+      Supabase Postgres URLs with real passwords, kept 63/69 through
+      adjudication. The leak mechanics are inverted.
+    </p>
+    <img class="chart" src="../charts-v0/03-credentials.png"
+         alt="Credential classes: DB connection string 65 repos, generic secret 30, Google API key 13, AWS 4, GitHub token 4">
+    <div class="callout">
+      No Supabase anon keys. No service-role JWTs. No RLS stories. v0's
+      credential surface is dominated by database connection strings
+      hardcoded in app source — the kind of credential a backend deployment
+      would need, but v0 puts directly in the code.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>Exhaustive verification — no subsample <span class="badge">243/243 findings</span></h2>
+    <p class="lead">
+      The Lovable study verified a 50-repo subsample. Here, every finding
+      in every repo with findings was adjudicated. 55 dropped (22.6%)
+      and the drops are explainable — not scattered.
+    </p>
+    <img class="chart" src="../charts-v0/04-verification.png"
+         alt="Verification: private key 20/20 dropped, resend 20/21 dropped, AWS 0/32 dropped">
+    <div class="callout red">
+      The private-key findings (20) were all vendored Go testdata —
+      automatically pruned by the <code>pkg/mod</code> fix. The resend
+      findings (20/21) exposed a pattern bug: PIL internals, minified JS,
+      and image filenames matching the <code>re_</code> prefix. The
+      pattern was tightened and regression-tested. And the <strong>32 AWS
+      keys: 0/32 dropped</strong> — all real.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>The structural exposure is real <span class="badge">blast radius</span></h2>
+    <p class="lead">
+      What would the committed credentials actually do? 15.4% of v0 apps
+      would grant data access if their credentials were used — and 14.0%
+      is structurally verified: live DB passwords, GitHub PATs, AWS keys.
+      These are in code and config, not in .env.
+    </p>
+    <img class="chart" src="../charts-v0/07-blast.png"
+         alt="Blast radius: 79 of 513 apps tier A (data access), 7 cost, 11 bounded, 416 none">
+    <div class="callout red">
+      The structural share is <strong>nearly double Lovable's</strong>
+      (14.0% vs 7.3%). Lovable's exposure is broad and shallow (anon
+      keys bounded by RLS); v0's is narrow and deep — live database
+      passwords and GitHub PATs in frontend clone apps, readable by
+      every visitor.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>The mechanics are inverted <span class="badge">where secrets hide</span></h2>
+    <p class="lead">
+      Lovable's data-access credentials live in docs and .env. v0's live
+      in config files and the frontend bundle. The docs are almost clean.
+      The danger doesn't hide in the places you'd expect.
+    </p>
+    <img class="chart" src="../charts-v0/08-locations.png"
+         alt="v0 findings by location: config 62 tier-A, committed .env 48, frontend 42, docs 4">
+    <div class="callout amber">
+      <strong>Config is the #1 home for v0 secrets:</strong> MCP manifests,
+      JSON config, and n8n automation files with embedded service-role
+      keys. <strong>The frontend bundle carries 42 tier-A findings</strong>
+      — GitHub PATs in clone apps (<code>ghp_</code> tokens in
+      <code>src/core/api/get/*.tsx</code>), published to every visitor.
+      And docs carry almost nothing — the opposite of Lovable.
+    </div>
+  </div>
+</section>
+
+<section class="compare">
+  <div class="wrap">
+    <h2>The contrast tells the whole story</h2>
+    <p>
+      Same engine, same verification, different generators — completely
+      different leak mechanics. Neither is "safer" — they just fail in
+      different places.
+    </p>
+    <table class="cmp">
+      <tr><th></th><th>v0 (N=513)</th><th>Lovable (N=881)</th></tr>
+      <tr><td>Committed .env</td><td class="hl"><b>7.0%</b></td><td>27.5%</td></tr>
+      <tr><td>No root .gitignore</td><td class="hl"><b>38.2%</b></td><td>10.4%</td></tr>
+      <tr><td>Duplicated file families</td><td class="hl"><b>24.4%</b></td><td>8.9%</td></tr>
+      <tr><td>Fully clean</td><td><b>64.7%</b></td><td>50.9%</td></tr>
+      <tr><td>Data-access tier (structural)</td><td class="hl"><b>14.0%</b></td><td>7.3%</td></tr>
+      <tr><td>Top tier-A location</td><td class="hl"><b>config + frontend</b></td><td>docs + .env</td></tr>
+      <tr><td>Supabase presence</td><td>0.6%</td><td>24.4%</td></tr>
+      <tr><td>F grade</td><td><b>4.7%</b></td><td>7.3%</td></tr>
+    </table>
+    <p>
+      Lovable leaks through .env; v0 leaks through code. The exposure
+      follows the generator — not the model, not the platform, not the
+      prompt. That is the argument for scanning every generator.
+    </p>
+  </div>
+</section>
+
+<section class="method">
+  <div class="wrap">
+    <h2>Methodology</h2>
+    <p><strong>Signal:</strong> <code>data-v0-</code> attributes — v0.dev writes one into every generated component. The frame is the complete enumerable surface: <code>data-v0- language:HTML</code> (671 hits) merged with <code>data-v0- extension:tsx</code> (376), deduplicated to 533 public repos; 513 downloaded (19 exceeded the 150 MB cap, 1 gone). 99.8% platform-confirmed by the scan.</p>
+    <p><strong>Scan:</strong> the same Septr rules engine as the Lovable study, offline, over each repo's GitHub tarball. Existence checks, bundle checks, duplication, content-derived .env severity.</p>
+    <p><strong>Verification:</strong> all 243 findings across all 95 repos with findings — exhaustive, no subsample — adjudicated with surrounding code under the only-high-confidence-drops-count rule. 55 dropped (22.6%), 188 kept.</p>
+    <p><strong>Ethics:</strong> aggregates and anonymized rows only; no repo-to-credential mapping; no confirmed-live testing.</p>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <div class="wrap">
+    <h2>Download the raw data</h2>
+    <p>Repository names replaced with sequential ids. Every figure on this page recomputes from the rows below.</p>
+    <div class="dl-grid">
+      <a class="dl-card" href="../../data/corpus-v0/aggregates.json"><div class="name">aggregates.json</div><div class="desc">Machine-readable results</div></a>
+      <a class="dl-card" href="../../data/corpus-v0/blast-radius.json"><div class="name">blast-radius.json</div><div class="desc">Tier assignments</div></a>
+      <a class="dl-card" href="../../data/corpus-v0/scan-results.anonymized.jsonl"><div class="name">scan-results.anonymized.jsonl</div><div class="desc">513 repos — flags + findings</div></a>
+      <a class="dl-card" href="../../data/corpus-v0/verdicts.anonymized.jsonl"><div class="name">verdicts.anonymized.jsonl</div><div class="desc">243 findings — verdicts + reasons</div></a>
+    </div>
+    <p style="margin-top: 24px; font-size: 14px; color: var(--gray-400);">free, no signup. one ask before the links: cite this page.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>AI apps leak through code, not just .env</h3>
+        <p style="margin-bottom: 8px;">A Septr corpus study — the second population of the corpus program, alongside the <a href="../index.html">.env problem</a> (Lovable, 881 apps) and ogbuilds' 1,969-repo Lovable study.</p>
+        <p>Every proportion carries a 95% Wilson confidence interval in the aggregates file.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <p><a href="../../studies/CORPUS_STUDY_V0.md">Full write-up</a></p>
+        <p><a href="../comparison/index.html">Four populations, one engine</a></p>
+        <p><a href="../landscape/index.html">The vibe-coding landscape</a></p>
+      </div>
+    </div>
+    <div class="copy">© 2026 Septr. Built with a rules engine, not vibes.</div>
+  </div>
+</footer>
+
+</body>
+</html>
+        <p><a href="../../studies/CORPUS_STUDY_V0.md">Full study write-up</a></p>
+        <p><a href="index.html">Lovable study (visual)</a></p>
+        <p><a href="https://ogbuilds.ai/studies/lovable-app-security">ogbuilds comparison</a></p>
+      </div>
+    </div>
+    <div class="copy">© 2026 Septr. Built with a rules engine, not vibes.</div>
+  </div>
+</footer>
+
+</body>
+</html>

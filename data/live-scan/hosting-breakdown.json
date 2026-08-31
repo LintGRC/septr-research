@@ -1,0 +1,72 @@
+{
+  "n": 1267,
+  "n_scanned": 1258,
+  "deployment_model": {
+    "platform_managed": {
+      "urls": 78,
+      "scanned": 78,
+      "critical_findings": 0,
+      "high_findings": 0,
+      "apps_with_critical": 0,
+      "apps_with_high": 0
+    },
+    "self_deployed": {
+      "urls": 1170,
+      "scanned": 1161,
+      "critical_findings": 11,
+      "high_findings": 67,
+      "apps_with_critical": 10,
+      "apps_with_high": 53
+    }
+  },
+  "by_host": {
+    "vercel": {
+      "urls": 648,
+      "scanned": 639,
+      "critical_findings": 4,
+      "high_findings": 22,
+      "apps_with_critical": 4,
+      "apps_with_high": 18
+    },
+    "cloudflare-pages": {
+      "urls": 319,
+      "scanned": 319,
+      "critical_findings": 4,
+      "high_findings": 38,
+      "apps_with_critical": 3,
+      "apps_with_high": 28
+    },
+    "netlify": {
+      "urls": 194,
+      "scanned": 194,
+      "critical_findings": 3,
+      "high_findings": 7,
+      "apps_with_critical": 3,
+      "apps_with_high": 7
+    },
+    "lovable-hosted": {
+      "urls": 63,
+      "scanned": 63,
+      "critical_findings": 0,
+      "high_findings": 0,
+      "apps_with_critical": 0,
+      "apps_with_high": 0
+    },
+    "replit-hosted": {
+      "urls": 15,
+      "scanned": 15,
+      "critical_findings": 0,
+      "high_findings": 0,
+      "apps_with_critical": 0,
+      "apps_with_high": 0
+    },
+    "other": {
+      "urls": 9,
+      "scanned": 9,
+      "critical_findings": 0,
+      "high_findings": 0,
+      "apps_with_critical": 0,
+      "apps_with_high": 0
+    }
+  }
+}

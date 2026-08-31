@@ -1,0 +1,102 @@
+{
+  "n": 1267,
+  "n_scanned": 1258,
+  "rules": [
+    {
+      "check_id": "missing_header",
+      "severity": "medium",
+      "tier": "D",
+      "total_hits": 4505,
+      "apps_affected": 1221,
+      "pct_of_apps": 96.4
+    },
+    {
+      "check_id": "supabase_anon",
+      "severity": "low",
+      "tier": "D",
+      "total_hits": 73,
+      "apps_affected": 73,
+      "pct_of_apps": 5.8
+    },
+    {
+      "check_id": "no_bundles",
+      "severity": "low",
+      "tier": "D",
+      "total_hits": 41,
+      "apps_affected": 41,
+      "pct_of_apps": 3.2
+    },
+    {
+      "check_id": "exposed_file",
+      "severity": "high",
+      "tier": "C",
+      "total_hits": 36,
+      "apps_affected": 31,
+      "pct_of_apps": 2.4
+    },
+    {
+      "check_id": "dependency_vuln",
+      "severity": "high",
+      "tier": "C",
+      "total_hits": 19,
+      "apps_affected": 10,
+      "pct_of_apps": 0.8
+    },
+    {
+      "check_id": "generic_secret",
+      "severity": "medium",
+      "tier": "B",
+      "total_hits": 11,
+      "apps_affected": 11,
+      "pct_of_apps": 0.9
+    },
+    {
+      "check_id": "google_api_key",
+      "severity": "high",
+      "tier": "B",
+      "total_hits": 11,
+      "apps_affected": 11,
+      "pct_of_apps": 0.9
+    },
+    {
+      "check_id": "openai_key",
+      "severity": "critical",
+      "tier": "B",
+      "total_hits": 7,
+      "apps_affected": 7,
+      "pct_of_apps": 0.6
+    },
+    {
+      "check_id": "supabase_service_role",
+      "severity": "critical",
+      "tier": "A",
+      "total_hits": 4,
+      "apps_affected": 4,
+      "pct_of_apps": 0.3
+    },
+    {
+      "check_id": "docs_exposed",
+      "severity": "medium",
+      "tier": "C",
+      "total_hits": 4,
+      "apps_affected": 4,
+      "pct_of_apps": 0.3
+    },
+    {
+      "check_id": "google_gemini_key",
+      "severity": "high",
+      "tier": "B",
+      "total_hits": 3,
+      "apps_affected": 3,
+      "pct_of_apps": 0.2
+    },
+    {
+      "check_id": "hallucinated_package",
+      "severity": "high",
+      "tier": "C",
+      "total_hits": 1,
+      "apps_affected": 1,
+      "pct_of_apps": 0.1
+    }
+  ]
+}

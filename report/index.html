@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1 in 4 AI-built apps ships its .env file — Septr corpus study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --blue: #2563eb; --amber: #d97706; --green: #059669;
+    --red: #dc2626; --gray-50: #fafafa; --gray-100: #f3f4f6;
+    --gray-200: #e5e7eb; --gray-400: #9ca3af;
+    --gray-500: #6b7280; --gray-900: #111827;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 Helvetica, Arial, sans-serif;
+    color: var(--gray-900); background: #fff; line-height: 1.65;
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
+
+  /* ── nav ── */
+  nav.top { padding: 20px 0; border-bottom: 1px solid var(--gray-200); }
+  nav.top .inner {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  nav.top .brand { font-weight: 800; font-size: 16px; color: var(--gray-900);
+                    text-decoration: none; letter-spacing: -.01em; }
+  nav.top .links { display: flex; gap: 28px; }
+  nav.top .links a {
+    font-size: 14px; font-weight: 500; color: var(--gray-500);
+    text-decoration: none; transition: color .15s;
+  }
+  nav.top .links a:hover { color: var(--gray-900); }
+
+  /* ── hero ── */
+  header.hero { padding: 96px 0 72px; }
+  .kicker {
+    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
+    font-weight: 600; color: var(--gray-400); margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 52px; line-height: 1.1; letter-spacing: -.03em;
+    font-weight: 800; max-width: 800px;
+  }
+  h1 .accent { color: var(--blue); }
+  .sub {
+    font-size: 19px; color: var(--gray-500); margin-top: 20px;
+    max-width: 680px; line-height: 1.7;
+  }
+  .cta-row { display: flex; gap: 14px; margin-top: 36px; align-items: center; }
+  .cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: var(--blue); color: #fff; padding: 14px 28px;
+    border-radius: 10px; font-size: 15px; font-weight: 600;
+    text-decoration: none; transition: background .15s, box-shadow .15s;
+  }
+  .cta:hover { background: #1d4ed8; box-shadow: 0 4px 12px rgba(37,99,235,.3); }
+  .cta.secondary {
+    background: var(--gray-100); color: var(--gray-900);
+  }
+  .cta.secondary:hover { background: var(--gray-200); box-shadow: none; }
+
+  .stats {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px; margin-top: 48px;
+  }
+  .stat {
+    background: var(--gray-50); border: 1px solid var(--gray-200);
+    border-radius: 14px; padding: 24px 26px;
+  }
+  .stat .num { font-size: 40px; font-weight: 800; letter-spacing: -.03em; line-height: 1; }
+  .stat .lbl { font-size: 14px; color: var(--gray-500); margin-top: 8px; line-height: 1.4; }
+  .stat.amber .num { color: var(--amber); }
+  .stat.green .num { color: var(--green); }
+  .stat.red .num { color: var(--red); }
+  .stat.blue .num { color: var(--blue); }
+
+  /* ── narrative sections ── */
+  section.story { padding: 80px 0; border-top: 1px solid var(--gray-200); }
+  section.story:first-of-type { border-top: none; }
+  h2 {
+    font-size: 34px; letter-spacing: -.02em; font-weight: 800;
+    margin-bottom: 12px; line-height: 1.2;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    letter-spacing: .1em; background: var(--gray-100); color: var(--gray-500);
+    border-radius: 999px; padding: 5px 12px; margin-left: 12px;
+    vertical-align: middle; position: relative; top: -2px;
+  }
+  .lead {
+    font-size: 18px; color: var(--gray-500); max-width: 740px;
+    margin-bottom: 36px; line-height: 1.7;
+  }
+  .story img.chart {
+    width: 100%; height: auto; border-radius: 14px;
+    border: 1px solid var(--gray-200); display: block;
+    box-shadow: 0 1px 3px rgba(0,0,0,.04);
+  }
+  .callout {
+    margin-top: 36px; background: var(--gray-50); border: 1px solid var(--gray-200);
+    border-radius: 14px; padding: 24px 28px; font-size: 16px;
+    border-left: 4px solid var(--blue); line-height: 1.7;
+  }
+  .callout.amber { border-left-color: var(--amber); }
+  .callout.red { border-left-color: var(--red); }
+  .callout.green { border-left-color: var(--green); }
+  .callout strong { font-weight: 700; }
+
+  /* ── methodology section ── */
+  section.method { padding: 80px 0; border-top: 1px solid var(--gray-200); }
+  section.method h2 { margin-bottom: 20px; }
+  section.method p {
+    font-size: 16px; color: var(--gray-500); max-width: 780px;
+    margin-bottom: 18px; line-height: 1.8;
+  }
+  section.method p strong { color: var(--gray-900); font-weight: 600; }
+  section.method code {
+    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
+    font-size: 14px; background: var(--gray-100); padding: 2px 7px;
+    border-radius: 5px; color: var(--gray-900);
+  }
+
+  /* ── download section ── */
+  section.download { padding: 80px 0; border-top: 1px solid var(--gray-200); }
+  section.download h2 { margin-bottom: 16px; }
+  section.download p {
+    font-size: 16px; color: var(--gray-500); max-width: 700px;
+    margin-bottom: 28px; line-height: 1.7;
+  }
+  .dl-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+  }
+  .dl-card {
+    display: block; padding: 18px 22px; border-radius: 12px;
+    border: 1px solid var(--gray-200); text-decoration: none;
+    transition: border-color .15s, box-shadow .15s;
+  }
+  .dl-card:hover { border-color: var(--blue); box-shadow: 0 2px 8px rgba(37,99,235,.1); }
+  .dl-card .name { font-size: 14px; font-weight: 600; color: var(--gray-900); }
+  .dl-card .desc { font-size: 13px; color: var(--gray-400); margin-top: 4px; }
+
+  /* ── comparison section ── */
+  section.compare { padding: 80px 0; border-top: 1px solid var(--gray-200); }
+  section.compare h2 { margin-bottom: 16px; }
+  section.compare p {
+    font-size: 18px; color: var(--gray-500); max-width: 740px;
+    margin-bottom: 20px; line-height: 1.7;
+  }
+  section.compare .link {
+    display: inline-flex; align-items: center; gap: 6px;
+    font-size: 15px; font-weight: 600; color: var(--blue); text-decoration: none;
+  }
+  section.compare .link:hover { text-decoration: underline; }
+
+  /* ── bottom CTA ── */
+  section.cta-section {
+    padding: 80px 0; text-align: center;
+    background: var(--gray-50); border-top: 1px solid var(--gray-200);
+  }
+  section.cta-section h2 { margin-bottom: 12px; }
+  section.cta-section p {
+    font-size: 17px; color: var(--gray-500); margin-bottom: 32px;
+    max-width: 560px; margin-left: auto; margin-right: auto;
+  }
+
+  /* ── footer ── */
+  footer {
+    background: var(--gray-900); color: var(--gray-400);
+    padding: 56px 0 64px; font-size: 14px;
+  }
+  footer h3 { color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 12px; }
+  footer a { color: #93c5fd; text-decoration: none; }
+  footer a:hover { text-decoration: underline; }
+  footer .cols { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; }
+  footer .copy { margin-top: 36px; padding-top: 24px; border-top: 1px solid #374151;
+                 font-size: 13px; }
+
+  @media (max-width: 720px) {
+    h1 { font-size: 34px; }
+    h2 { font-size: 26px; }
+    header.hero { padding: 64px 0 48px; }
+    section.story, section.method, section.download, section.compare,
+    section.cta-section { padding: 56px 0; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    footer .cols { grid-template-columns: 1fr; gap: 32px; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap inner">
+    <a class="brand" href="/">Septr</a>
+    <div class="links">
+      <a href="v0/index.html">Code leaks</a>
+      <a href="aicoded/index.html">Generators</a>
+      <a href="landscape/index.html">Landscape</a>
+      <a href="comparison/index.html">One engine</a>
+      <a href="../studies/CORPUS_STUDY.md">Full study</a>
+      <a href="https://ogbuilds.ai/studies/lovable-app-security">ogbuilds comparison</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Septr research · N = 881 Lovable apps · August 2026</div>
+    <h1>1 in 4 AI-built apps <span class="accent">ships its .env file</span></h1>
+    <p class="sub">
+      AI-generated apps are supposed to be secure by default. The
+      generators write the scaffolding, the developer writes the prompts.
+      We scanned the full frame of Lovable-built apps on GitHub to find
+      out what actually happens when you let a generator ship your code.
+    </p>
+    <div class="cta-row">
+      <a class="cta" href="#">scan your repo →</a>
+      <a class="cta secondary" href="#download">raw data</a>
+    </div>
+    <div class="stats">
+      <div class="stat amber">
+        <div class="num">27.5%</div>
+        <div class="lbl">commit their .env file — a file that's either in the repo or it isn't</div>
+      </div>
+      <div class="stat green">
+        <div class="num">84.0%</div>
+        <div class="lbl">grade A — most are safe, but most isn't all</div>
+      </div>
+      <div class="stat blue">
+        <div class="num">100</div>
+        <div class="lbl">median score — the apps that don't leak are perfectly clean</div>
+      </div>
+      <div class="stat red">
+        <div class="num">7.3%</div>
+        <div class="lbl">ship committed live secrets — this is the tail that matters</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="story">
+  <div class="wrap">
+    <h2>The durable figure <span class="badge">presence, not exploitability</span></h2>
+    <p class="lead">
+      A file is either in the repository or it is not. This number
+      doesn't depend on how the scanner works, what rules it applies, or
+      what it misses — it's a binary fact. 242 of 881 Lovable apps
+      commit their <code>.env</code> file to the public GitHub archive.
+    </p>
+    <img class="chart" src="charts/01-waffle.png"
+         alt="Waffle chart: 242 of 881 repos commit a .env file (27.5%)">
+    <div class="callout amber">
+      This is the durable figure. Lovable ships Vite + Supabase apps, so
+      the typical <code>.env</code> holds a <code>VITE_</code> URL and
+      the anon key — public by design. But 1 in 4 of these files contains
+      a service-role key, a database credential, or a real secret masked
+      with a <code>VITE_</code> prefix that publishes it to every visitor.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>Most apps are safe <span class="badge">and that matters too</span></h2>
+    <p class="lead">
+      But the headline tells only half the story. 448 of 881 apps came
+      back with nothing at all — the median score is a perfect 100. Most
+      Lovable apps are perfectly clean. The question is what happens to the
+      ones that aren't.
+    </p>
+    <img class="chart" src="charts/02-grades.png"
+         alt="Security grade distribution: A 740 (84%), B 36, C 24, D 17, F 64 (7.3%)">
+    <div class="callout green">
+      7.3% score an F — and those 64 apps don't just leak placeholders.
+      They ship real service-role keys, database credentials, and hardcoded
+      AWS access keys. Septr's A-band share (84% vs ogbuilds' 64%) is
+      higher because we role-verify Supabase keys from the JWT payload
+      itself: <strong>0/269 false positives</strong> on public-by-design
+      anon keys.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>What the scanner catches <span class="badge">before verification</span></h2>
+    <p class="lead">
+      Before any human checks, the engine sees Supabase JWTs
+      everywhere — because almost every Lovable app uses Supabase, and the
+      anon key is meant to be public. The raw number looks alarming. The
+      question is what it means.
+    </p>
+    <img class="chart" src="charts/03-credentials.png"
+         alt="Credential classes by repo: Supabase JWT 215, generic secret 87, DB connection string 41, Google API key 36">
+    <div class="callout">
+      The largest class — <strong>Supabase JWTs at 24.4%</strong> — is the
+      ambiguous one. After role-verification from the JWT payload, all
+      269 anon-key findings verified as public-by-design. The class
+      nobody would argue about — committed database connection strings —
+      sits at a quiet 4.7%. This is why we verify before reporting a number.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>Verification strips the noise <span class="badge">the product story</span></h2>
+    <p class="lead">
+      This is the difference between a scanner that flags and a scanner
+      that verdicts. Every finding in a seeded 50-repo subsample was
+      handed an adversarial model with the surrounding code and told to
+      argue it down. 89% of generic secrets were placeholders and docs
+      examples. The role-verified rules lost nothing.
+    </p>
+    <img class="chart" src="charts/04-verification.png"
+         alt="Verification overturn by rule: generic secret 89% dropped, role-verified JWTs 0% dropped">
+    <div class="callout red">
+      <strong>12.5% of what scanners report is false.</strong> The rules that
+      verify from the value's own format (Supabase JWT role, Stripe key
+      prefix) lost <strong>0%</strong>. That's the gap Septr exists to fill:
+      every other scanner stops at pattern matching; we stop at evidence.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>What stays after verification is real <span class="badge">the disaster tail</span></h2>
+    <p class="lead">
+      After verification, 64 apps still grade F. Not placeholders — real
+      database credentials, real service-role keys, real hardcoded AWS
+      access keys. These repos commit the .env and trip several credential
+      classes at once. This is the population Septr is built for.
+    </p>
+    <img class="chart" src="charts/05-disaster.png"
+         alt="Donut chart: 64 of 881 apps grade F; bar chart of findings inside F-grade repos: DB connection strings, generic secrets, service role, AWS keys">
+    <div class="callout red">
+      The F-grade tail is small — 7.3% — but it's where the real damage
+      lives. A committed <code>service_role</code> key bypasses RLS and
+      grants full database access. A committed database credential lets
+      anyone connect. A committed AWS key burns quota. The rest of the
+      apps are safe; these 64 are the reason a production scan exists.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>A leaked key isn't equal <span class="badge">blast radius, not prevalence</span></h2>
+    <p class="lead">
+      Not every committed secret is equally dangerous. A service-role key
+      bypasses row-level security and grants full database access. An anon
+      key is bounded by design — unless RLS is turned off. Blast radius
+      tells you what would actually happen.
+    </p>
+    <img class="chart" src="charts/07-blast.png"
+         alt="Blast radius: 88 of 881 apps would grant data access if valid; 27 of 210 anon-key apps have RLS disabled">
+    <div class="callout red">
+      <strong>1 in 10</strong> apps ships something that would grant data
+      access if used. The anon key is the subtle case: it is safe
+      <em>because</em> of RLS — but <strong>27 of 210 anon-key apps
+      (12.9%) turned RLS off</strong>. The bound that makes the key safe
+      is the same bound you're supposed to keep.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>They don't hide where you'd think <span class="badge">the surprise</span></h2>
+    <p class="lead">
+      Every finding carries a file path. Where the secrets are tells you
+      who could have seen them — and what an attacker would find first.
+      The answer is counter-intuitive.
+    </p>
+    <img class="chart" src="charts/08-locations.png"
+         alt="Findings by location and tier: docs 228 tier-A, committed .env 181, tooling 124, frontend 5">
+    <div class="callout amber">
+      <strong>Docs are the leak surface, not the frontend.</strong> 33% of
+      data-access credentials live in markdown — deployment checklists,
+      connection analyses, setup guides — written down with instructions.
+      The frontend bundle carries <strong>5</strong> data-access findings
+      in 5 repos (0.6%): service-role JWTs shipped to every visitor. And
+      config is where automation secrets live — n8n workflows with
+      embedded service-role keys. The danger doesn't hide in the bundle.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>What this means for you <span class="badge">the solution</span></h2>
+    <p class="lead">
+      27.5% of Lovable apps commit their .env file. After verification,
+      7.3% ship real secrets — database credentials, service-role keys,
+      AWS access keys. The secret leaks through docs and config, not the
+      frontend bundle. A leaked service-role key bypasses RLS and grants
+      full database access. 12.9% of Supabase apps turned that bound off.
+    </p>
+    <div class="callout" style="border-left-color: var(--blue);">
+      <strong>Septr is built for exactly this problem.</strong> The
+      same rules engine that produced these numbers runs on your app in
+      real time — catching what static scanners miss (role-aware JWT
+      detection, env-file classification by blast radius, Supabase RLS
+      enforcement) and verifying what scanners can't (is this key
+      active, is this role real, is this line the one that matters).
+      <a class="link" href="#" style="margin-top: 12px; display: inline-flex;">scan your repo →</a>
+    </div>
+  </div>
+</section>
+
+<section class="compare">
+  <div class="wrap">
+    <h2>The story holds across every population</h2>
+    <p>
+      The same engine, the same verification, different generators —
+      different leak mechanics. v0 apps leak through hardcoded code
+      (15.4% data-access tier), self-described AI-coded apps leak at 1.5%
+      unfiltered (7.7% app-shaped), and Lovable's 27.5% is a Lovable
+      property, not an AI-coding property.
+    </p>
+    <img class="chart" src="charts/09-comparison.png"
+         alt="Grouped bar chart comparing Lovable, v0, AI-coded and AI-coded app-shaped populations on six security metrics">
+    <p style="margin-top: 24px; font-size: 15px; color: var(--gray-500);">
+      The exposure tracks how much real app wiring exists — and the leak
+      mechanics follow the generator. That is the argument for scanning
+      the whole class of AI-built apps, not any single framework.
+    </p>
+    <a class="link" href="https://ogbuilds.ai/studies/lovable-app-security">
+      read ogbuilds' study →
+    </a>
+  </div>
+</section>
+
+<section class="method">
+  <div class="wrap">
+    <h2>Methodology</h2>
+    <p>
+      <strong>Frame:</strong> GitHub code search
+      <code>lovable-tagger filename:package.json</code> — the complete
+      enumerable surface for Lovable apps on GitHub. 900 repos sampled in a
+      fixed seeded order (seed <code>20260812</code>); 881 downloaded (19
+      exceeded the 150&nbsp;MB archive cap). GitHub's code search caps at
+      1,000 results per query, so the frame is the full surface, not a
+      subsample.
+    </p>
+    <p>
+      <strong>Scan:</strong> Septr's rules engine over each repo's GitHub
+      tarball, offline. Three rule families: existence checks (durable by
+      construction), bundle checks (per text file, role-aware for
+      Supabase JWTs), and duplication checks (content-hash families).
+      Committed .env files get content-derived severity — one finding per
+      live-secret line at that line's severity.
+    </p>
+    <p>
+      <strong>Verification:</strong> a seeded 50-repo subsample produced
+      361 findings, each adjudicated one at a time with the surrounding
+      code (redacted), using the same model that builds Septr, under the
+      ogbuilds rule: <strong>only high-confidence drops count</strong>.
+      45/361 dropped (12.5%). The verification subsample was selected
+      deterministically and the task IDs are stable — nothing was selected
+      after seeing the results.
+    </p>
+    <p>
+      <strong>Ethics:</strong> aggregates and anonymized rows only — no
+      repo-to-credential mapping, no confirmed-live credential testing.
+      Establishing that a key still works means using someone's credential
+      against their account, which is not a thing this study will do.
+    </p>
+    <p>
+      Every proportion carries a 95% Wilson confidence interval in the
+      aggregates file. A percentage from a sample without one invites the
+      reader to treat it as exact.
+    </p>
+  </div>
+</section>
+
+<section class="download" id="download">
+  <div class="wrap">
+    <h2>Download the raw data</h2>
+    <p>
+      The verification rows include every verdict, the ones that went
+      against us included: which rule fired, what the reviewer decided,
+      and how sure it was. Repository names are replaced with sequential
+      ids. Every figure on this page recomputes from the rows below.
+    </p>
+    <div class="dl-grid">
+      <a class="dl-card" href="../data/corpus/aggregates.json">
+        <div class="name">aggregates.json</div>
+        <div class="desc">Machine-readable study results</div>
+      </a>
+      <a class="dl-card" href="../data/corpus/scan-results.anonymized.jsonl">
+        <div class="name">scan-results.anonymized.jsonl</div>
+        <div class="desc">881 repos — existence flags + findings</div>
+      </a>
+      <a class="dl-card" href="../data/corpus/verdicts.anonymized.jsonl">
+        <div class="name">verdicts.anonymized.jsonl</div>
+        <div class="desc">361 findings — verdicts + confidence</div>
+      </a>
+      <a class="dl-card" href="../studies/CORPUS_STUDY.md">
+        <div class="name">CORPUS_STUDY.md</div>
+        <div class="desc">Full technical write-up</div>
+      </a>
+    </div>
+    <p style="margin-top: 24px; font-size: 14px; color: var(--gray-400);">
+      free, no signup. one ask before the links: cite this page.
+    </p>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="wrap">
+    <h2>Scan your own repo</h2>
+    <p>
+      The same engine that produced these numbers runs in about a minute.
+      No data leaves your machine.
+    </p>
+    <a class="cta" href="#">scan your repo →</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>1 in 4 AI-built apps ships its .env file</h3>
+        <p style="margin-bottom: 8px;">
+          A Septr corpus study. Inspired by and compared against
+          <a href="https://ogbuilds.ai/studies/lovable-app-security">ogbuilds'</a>
+          "What 1,969 Lovable apps actually ship."
+        </p>
+        <p>
+          Every proportion on this page carries a 95% Wilson confidence
+          interval in the aggregates file. The charts are generated from
+          the same data as the tables.
+        </p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <p><a href="../studies/CORPUS_STUDY.md">Full study write-up</a></p>
+        <p><a href="https://ogbuilds.ai/studies/lovable-app-security">ogbuilds comparison</a></p>
+        <p><a href="../pipeline/generate_report.py">Chart source</a></p>
+      </div>
+    </div>
+    <div class="copy">
+      © 2026 Septr. Built with a rules engine, not vibes.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

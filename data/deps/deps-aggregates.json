@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-08-14T18:11:43.016817+00:00",
+  "populations": {
+    "Lovable": {
+      "repos_with_manifests": 876,
+      "repos_with_vuln": 353,
+      "repos_with_kev": 4,
+      "repos_with_public_exploit": 36,
+      "repos_vuln_only": 315,
+      "pct_vuln": 40.29680365296804,
+      "pct_kev": 0.45662100456621,
+      "pct_public_exploit": 4.109589041095891,
+      "pct_kev_excl": 0.45662100456621,
+      "pct_exploit_not_kev": 3.8812785388127855,
+      "pct_vuln_only": 35.95890410958904
+    },
+    "v0": {
+      "repos_with_manifests": 364,
+      "repos_with_vuln": 326,
+      "repos_with_kev": 4,
+      "repos_with_public_exploit": 180,
+      "repos_vuln_only": 145,
+      "pct_vuln": 89.56043956043956,
+      "pct_kev": 1.098901098901099,
+      "pct_public_exploit": 49.45054945054945,
+      "pct_kev_excl": 1.098901098901099,
+      "pct_exploit_not_kev": 48.62637362637363,
+      "pct_vuln_only": 39.83516483516483
+    },
+    "AI-coded": {
+      "repos_with_manifests": 135,
+      "repos_with_vuln": 84,
+      "repos_with_kev": 3,
+      "repos_with_public_exploit": 19,
+      "repos_vuln_only": 64,
+      "pct_vuln": 62.22222222222222,
+      "pct_kev": 2.2222222222222223,
+      "pct_public_exploit": 14.074074074074074,
+      "pct_kev_excl": 2.2222222222222223,
+      "pct_exploit_not_kev": 12.592592592592593,
+      "pct_vuln_only": 47.407407407407405
+    }
+  },
+  "top_vulnerable": {
+    "Lovable": [
+      {
+        "name": "express@4.18.2",
+        "repos": 53
+      },
+      {
+        "name": "xlsx@0.18.5",
+        "repos": 45
+      },
+      {
+        "name": "uuid@11.1.0",
+        "repos": 39
+      },
+      {
+        "name": "axios@1.10.0",
+        "repos": 25
+      },
+      {
+        "name": "axios@1.9.0",
+        "repos": 25
+      },
+      {
+        "name": "python-dotenv@1.0.0",
+        "repos": 22
+      },
+      {
+        "name": "jspdf@3.0.1",
+        "repos": 22
+      },
+      {
+        "name": "axios@1.12.2",
+        "repos": 20
+      }
+    ],
+    "v0": [
+      {
+        "name": "mongoose@8.0.3",
+        "repos": 152
+      },
+      {
+        "name": "express@4.18.2",
+        "repos": 130
+      },
+      {
+        "name": "next@14.0.4",
+        "repos": 91
+      },
+      {
+        "name": "axios@1.6.2",
+        "repos": 80
+      },
+      {
+        "name": "morgan@1.10.0",
+        "repos": 20
+      },
+      {
+        "name": "express@4.19.2",
+        "repos": 15
+      },
+      {
+        "name": "next@14.2.5",
+        "repos": 14
+      },
+      {
+        "name": "requests@2.31.0",
+        "repos": 14
+      }
+    ],
+    "AI-coded": [
+      {
+        "name": "next@15.0.0",
+        "repos": 6
+      },
+      {
+        "name": "@langchain/core@1.1.4",
+        "repos": 5
+      },
+      {
+        "name": "drizzle-orm@0.45.1",
+        "repos": 3
+      },
+      {
+        "name": "next@16.1.6",
+        "repos": 3
+      },
+      {
+        "name": "express@4.19.2",
+        "repos": 3
+      },
+      {
+        "name": "markdown-it@14.1.0",
+        "repos": 3
+      },
+      {
+        "name": "click@8.1.8",
+        "repos": 2
+      },
+      {
+        "name": "requests@2.32.3",
+        "repos": 2
+      }
+    ]
+  }
+}

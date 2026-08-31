@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Four populations, one engine — Septr case study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --blue:#2563eb; --amber:#d97706; --green:#059669; --red:#dc2626; --gray-50:#fafafa; --gray-100:#f3f4f6; --gray-200:#e5e7eb; --gray-400:#9ca3af; --gray-500:#6b7280; --gray-900:#111827; }
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--gray-900);background:#fff;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+  nav.top{padding:20px 0;border-bottom:1px solid var(--gray-200)}
+  nav.top .inner{display:flex;align-items:center;justify-content:space-between}
+  nav.top .brand{font-weight:800;font-size:16px;color:var(--gray-900);text-decoration:none}
+  nav.top .links{display:flex;gap:28px}
+  nav.top .links a{font-size:14px;font-weight:500;color:var(--gray-500);text-decoration:none}
+  nav.top .links a:hover{color:var(--gray-900)}
+  nav.top .links a.here{color:var(--gray-900);font-weight:600}
+  header.hero{padding:96px 0 72px}
+  .kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:600;color:var(--gray-400);margin-bottom:20px}
+  h1{font-size:52px;line-height:1.1;letter-spacing:-.03em;font-weight:800;max-width:820px}
+  h1 .accent{color:var(--blue)}
+  .sub{font-size:19px;color:var(--gray-500);margin-top:20px;max-width:700px;line-height:1.7}
+  section.story{padding:80px 0;border-top:1px solid var(--gray-200)}
+  section.story:first-of-type{border-top:none}
+  h2{font-size:34px;letter-spacing:-.02em;font-weight:800;margin-bottom:12px;line-height:1.2}
+  .lead{font-size:18px;color:var(--gray-500);max-width:740px;margin-bottom:36px;line-height:1.7}
+  .story img.chart{width:100%;height:auto;border-radius:14px;border:1px solid var(--gray-200);display:block;box-shadow:0 1px 3px rgba(0,0,0,.04)}
+  .callout{margin-top:36px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:14px;padding:24px 28px;font-size:16px;border-left:4px solid var(--blue);line-height:1.7}
+  .callout.red{border-left-color:var(--red)}
+  .callout strong{font-weight:700}
+  table.cmp{width:100%;border-collapse:collapse;margin:24px 0 8px;font-size:15px}
+  table.cmp th,table.cmp td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--gray-200)}
+  table.cmp th{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--gray-400);font-weight:600}
+  table.cmp td b{color:var(--gray-900)}
+  table.cmp td .hl{color:var(--amber);font-weight:700}
+  .report-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-top:28px}
+  .rl{display:block;padding:18px 22px;border-radius:12px;border:1px solid var(--gray-200);text-decoration:none}
+  .rl:hover{border-color:var(--blue)}
+  .rl .name{font-size:14px;font-weight:600;color:var(--gray-900)}
+  .rl .desc{font-size:13px;color:var(--gray-400);margin-top:4px}
+  footer{background:var(--gray-900);color:var(--gray-400);padding:56px 0 64px;font-size:14px}
+  footer h3{color:#fff;font-size:15px;font-weight:700;margin-bottom:12px}
+  footer a{color:#93c5fd;text-decoration:none}
+  footer .cols{display:grid;grid-template-columns:2fr 1fr;gap:48px}
+  footer .copy{margin-top:36px;padding-top:24px;border-top:1px solid #374151;font-size:13px}
+  @media(max-width:720px){h1{font-size:34px}h2{font-size:26px}header.hero{padding:64px 0 48px}section.story{padding:56px 0}footer .cols{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="top">
+  <div class="wrap inner">
+    <a class="brand" href="/">Septr</a>
+    <div class="links">
+      <a href="../index.html">.env problem</a>
+      <a href="../v0/index.html">Code leaks</a>
+      <a href="../aicoded/index.html">Generators</a>
+      <a href="../landscape/index.html">Landscape</a>
+      <a class="here" href="index.html">One engine</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">Septr research · case study · August 2026</div>
+    <h1>Four populations, <span class="accent">one engine</span></h1>
+    <p class="sub">
+      Same rules, same adjudication standard, four populations — the
+      corpus program in one chart. The exposure tracks how much real app
+      wiring exists; the leak mechanics follow the generator.
+    </p>
+  </div>
+</header>
+
+<section class="story">
+  <div class="wrap">
+    <h2>The comparison</h2>
+    <p class="lead">
+      2,076 apps across Lovable, v0, and the general AI-coded population —
+      every finding verified by hand, role-verified JWTs, RLS-aware.
+    </p>
+    <img class="chart" src="../charts/09-comparison.png"
+         alt="Grouped bar chart comparing Lovable, v0, AI-coded and AI-coded app-shaped populations on six security metrics">
+    <table class="cmp">
+      <tr><th></th><th>Lovable (N=881)</th><th>v0 (N=513)</th><th>AI-coded (N=591)</th><th>AI-coded apps (N=91)</th></tr>
+      <tr><td>Committed .env</td><td class="hl"><b>27.5%</b></td><td>7.0%</td><td>1.5%</td><td>7.7%</td></tr>
+      <tr><td>No root .gitignore</td><td>10.4%</td><td class="hl"><b>38.2%</b></td><td>38.7%</td><td>8.8%</td></tr>
+      <tr><td>Fully clean</td><td>50.9%</td><td>64.7%</td><td class="hl"><b>92.9%</b></td><td>71.4%</td></tr>
+      <tr><td>Mean score</td><td>90.5</td><td>93.4</td><td class="hl"><b>99.2</b></td><td>96.8</td></tr>
+      <tr><td>F grade</td><td class="hl"><b>7.3%</b></td><td>4.7%</td><td>0.7%</td><td>2.2%</td></tr>
+      <tr><td>Data-access tier</td><td>10.0%</td><td class="hl"><b>15.4%</b></td><td>1.2%</td><td>4.4%</td></tr>
+      <tr><td>Verification drop rate</td><td>12.5%</td><td>22.6%</td><td class="hl"><b>82%</b></td><td>—</td></tr>
+    </table>
+    <div class="callout red">
+      <strong>The finding:</strong> Lovable apps leak through .env because
+      Lovable builds env-wired apps (27.5%). v0 apps leak through code
+      because v0 builds code-heavy frontends (15.4% tier A). Self-described
+      AI-coded apps leak at 7.7% even when filtered to app shape. AI
+      coding isn't the problem — the generators' default workflows are.
+    </div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <h2>The four reports</h2>
+    <p class="lead">Each population has its own report, with its own angle, raw data, and charts.</p>
+    <div class="report-links">
+      <a class="rl" href="../index.html"><div class="name">1 in 4 apps ships its .env file</div><div class="desc">Lovable (N=881) — the env-centric leak mechanics</div></a>
+      <a class="rl" href="../v0/index.html"><div class="name">AI apps leak through code</div><div class="desc">v0 (N=513) — config and frontend bundles</div></a>
+      <a class="rl" href="../aicoded/index.html"><div class="name">The generators are the problem</div><div class="desc">AI-coded (N=591) — the general baseline + app-shaped slice</div></a>
+      <a class="rl" href="../landscape/index.html"><div class="name">The vibe-coding landscape</div><div class="desc">Census of who ships AI-built, and with what</div></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h3>Four populations, one engine</h3>
+        <p style="margin-bottom:8px">A Septr research case study — 2,076 apps, 649 adjudicated findings, one engine.</p>
+        <p>Inspired by and compared against <a href="https://ogbuilds.ai/studies/lovable-app-security">ogbuilds'</a> Lovable and 549-repo AI-coded studies.</p>
+      </div>
+      <div>
+        <h3>Links</h3>
+        <p><a href="../../studies/RESEARCH.md">All reports</a></p>
+        <p><a href="../../studies/CORPUS_STUDY.md">.env problem (write-up)</a></p>
+        <p><a href="../../studies/CORPUS_STUDY_V0.md">Code leaks (write-up)</a></p>
+        <p><a href="../../studies/CORPUS_STUDY_AICODED.md">Generators (write-up)</a></p>
+        <p><a href="../../studies/CORPUS_STUDY_LANDSCAPE.md">Landscape (write-up)</a></p>
+      </div>
+    </div>
+    <div class="copy">© 2026 Septr. Built with a rules engine, not vibes.</div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,548 @@
+[
+  {
+    "severity": "critical",
+    "check_id": "supabase_service_role",
+    "name": "Supabase service_role key exposed",
+    "url": "supabase-starter.vercel.app",
+    "source": "https://supabase-starter.vercel.app/static/js/main.18e954fc.chunk.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "debug@2.2.0 has known vulnerabilities",
+    "url": "supabase-starter.vercel.app",
+    "source": "Bundle 1"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "es5-ext@0.10.50 has known vulnerabilities",
+    "url": "supabase-starter.vercel.app",
+    "source": "Bundle 1"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "nuxt-starter.vercel.app",
+    "source": "https://nuxt-starter.vercel.app/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /debug.log",
+    "url": "todo-app.vercel.app",
+    "source": "https://todo-app.vercel.app/debug.log"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /firebase-config.js",
+    "url": "todoweb.pages.dev",
+    "source": "https://todoweb.pages.dev/firebase-config.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "todo-webapp.netlify.app",
+    "source": "https://cdn.ampproject.org/v0.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "handlebars@4.0.11 has known vulnerabilities",
+    "url": "todo.netlify.app",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "tina-starter.vercel.app",
+    "source": "https://tina-starter.vercel.app/.gitignore"
+  },
+  {
+    "severity": "critical",
+    "check_id": "openai_key",
+    "name": "OpenAI API key exposed",
+    "url": "todolist-generator.vercel.app",
+    "source": "https://todolist-generator.vercel.app/static/js/main.5cab2418.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /debug.log",
+    "url": "todo-app.vercel.app",
+    "source": "https://todo-app.vercel.app/debug.log"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "task-site.pages.dev",
+    "source": "https://task-site.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "taskweb.pages.dev",
+    "source": "https://taskweb.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "task-planner.vercel.app",
+    "source": "https://task-planner.vercel.app/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "taskmanager-app.pages.dev",
+    "source": "https://taskmanager-app.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /config.js",
+    "url": "taskmanager-starter.vercel.app",
+    "source": "https://taskmanager-starter.vercel.app/config.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "task-manager-landing.pages.dev",
+    "source": "https://task-manager-landing.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /config.js",
+    "url": "notes-admin.pages.dev",
+    "source": "https://notes-admin.pages.dev/config.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "notes-builder.vercel.app",
+    "source": "https://notes-builder.vercel.[BLOB REDACTED].js?dpl=dpl_88zW2UTtW7zLeDSdURNiAjkbA13A"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "note-tracker.vercel.app",
+    "source": "https://note-tracker.vercel.app/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "note-landing.pages.dev",
+    "source": "https://note-landing.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "journal-demo.pages.dev",
+    "source": "https://cdn.ampproject.org/v0.js"
+  },
+  {
+    "severity": "critical",
+    "check_id": "openai_key",
+    "name": "OpenAI API key exposed",
+    "url": "journal-tracker.pages.dev",
+    "source": "https://journal-tracker.pages.dev/script.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "journal-studio.pages.dev",
+    "source": "https://cdn.ampproject.org/v0.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /config.js",
+    "url": "diary-demo.pages.dev",
+    "source": "https://diary-demo.pages.dev/config.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_gemini_key",
+    "name": "Google Gemini API key exposed",
+    "url": "chat-starter.pages.dev",
+    "source": "https://chat-starter.pages.dev/assets/index-B20W1VZw.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.git/config",
+    "url": "chat-project.pages.dev",
+    "source": "https://chat-project.pages.dev/.git/config"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.git/HEAD",
+    "url": "chat-project.pages.dev",
+    "source": "https://chat-project.pages.dev/.git/HEAD"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "@babel/core@7.26.10 has known vulnerabilities",
+    "url": "journal-hub.vercel.app",
+    "source": "Bundle 10"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "express@4.15.2 has known vulnerabilities",
+    "url": "chat-example.vercel.app",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "socket.io@1.7.3 has known vulnerabilities",
+    "url": "chat-example.vercel.app",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "chat-landing.vercel.app",
+    "source": "https://chat-landing.vercel.app/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "chat-app-starter.vercel.app",
+    "source": "https://chat-app-starter.vercel.app/.gitignore"
+  },
+  {
+    "severity": "critical",
+    "check_id": "openai_key",
+    "name": "OpenAI API key exposed",
+    "url": "chatgpt-web.pages.dev",
+    "source": "HTML"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.git/config",
+    "url": "gpt.pages.dev",
+    "source": "https://gpt.pages.dev/.git/config"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.git/HEAD",
+    "url": "gpt.pages.dev",
+    "source": "https://gpt.pages.dev/.git/HEAD"
+  },
+  {
+    "severity": "critical",
+    "check_id": "supabase_service_role",
+    "name": "Supabase service_role key exposed",
+    "url": "gptapp.pages.dev",
+    "source": "https://gptapp.pages.dev/assets/index-86352f7e.js"
+  },
+  {
+    "severity": "critical",
+    "check_id": "openai_key",
+    "name": "OpenAI API key exposed",
+    "url": "gptapp.pages.dev",
+    "source": "https://gptapp.pages.dev/assets/index-86352f7e.js"
+  },
+  {
+    "severity": "critical",
+    "check_id": "openai_key",
+    "name": "OpenAI API key exposed",
+    "url": "chatgpt-clone-project.netlify.app",
+    "source": "https://chatgpt-clone-project.netlify.app/static/js/main.441b9537.js"
+  },
+  {
+    "severity": "critical",
+    "check_id": "supabase_service_role",
+    "name": "Supabase service_role key exposed",
+    "url": "gpt-dashboard.netlify.app",
+    "source": "https://gpt-dashboard.netlify.app/assets/index-0b8cc07a.js"
+  },
+  {
+    "severity": "critical",
+    "check_id": "openai_key",
+    "name": "OpenAI API key exposed",
+    "url": "gpt-tool.vercel.app",
+    "source": "https://gpt-tool.vercel.app/script.js"
+  },
+  {
+    "severity": "critical",
+    "check_id": "openai_key",
+    "name": "OpenAI API key exposed",
+    "url": "gpt-demo.netlify.app",
+    "source": "https://gpt-demo.netlify.app/assets/index-c5c30eed.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "axios@1.13.2 has known vulnerabilities",
+    "url": "chatroom-web.pages.dev",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "drizzle-orm@0.45.1 has known vulnerabilities",
+    "url": "chatroom-web.pages.dev",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "playwright@1.49.0 has known vulnerabilities",
+    "url": "chatroom-web.pages.dev",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "chatroom-web.pages.dev",
+    "source": "https://chatroom-web.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "llm-dashboard.pages.dev",
+    "source": "https://llm-dashboard.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "xlsx@0.18.5 has known vulnerabilities",
+    "url": "rag-chat.pages.dev",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "bot-web.pages.dev",
+    "source": "https://bot-web.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "bot-webapp.pages.dev",
+    "source": "HTML"
+  },
+  {
+    "severity": "high",
+    "check_id": "hallucinated_package",
+    "name": "Package does not exist on npm: node_modules",
+    "url": "agentweb.vercel.app",
+    "source": "npm registry returned 404 for this package"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "axios@1.7.9 has known vulnerabilities",
+    "url": "agentsite.netlify.app",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "agents@0.3.3 has known vulnerabilities",
+    "url": "agent-starter.pages.dev",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "agent-starter.pages.dev",
+    "source": "https://agent-starter.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "agent-tool.netlify.app",
+    "source": "HTML"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_gemini_key",
+    "name": "Google Gemini API key exposed",
+    "url": "agent-planner.vercel.app",
+    "source": "https://agent-planner.vercel.app/assets/index-BETqWCsu.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "agent-finder.pages.dev",
+    "source": "https://agent-finder.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "agent-pages.pages.dev",
+    "source": "HTML"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "agentsapp.netlify.app",
+    "source": "https://agentsapp.netlify.app/assets/index-3acbd6bb.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "agents@0.2.0 has known vulnerabilities",
+    "url": "agents-starter.pages.dev",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "ai@5.0.49 has known vulnerabilities",
+    "url": "agents-starter.pages.dev",
+    "source": "Manifest /package.json"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "agents-starter.pages.dev",
+    "source": "https://agents-starter.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "agents-admin.netlify.app",
+    "source": "HTML"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "ai-agent-tool.pages.dev",
+    "source": "https://ai-agent-tool.pages.dev/assets/index-CdjZxwnd.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "ai-agent-tracker.vercel.app",
+    "source": "https://ai-agent-tracker.vercel.app/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_api_key",
+    "name": "Google API key exposed",
+    "url": "ai-chat-site.vercel.app",
+    "source": "HTML"
+  },
+  {
+    "severity": "high",
+    "check_id": "google_gemini_key",
+    "name": "Google Gemini API key exposed",
+    "url": "ai-chat-tool.netlify.app",
+    "source": "https://ai-chat-tool.netlify.app/assets/index-CHgFYBfr.js"
+  },
+  {
+    "severity": "critical",
+    "check_id": "supabase_service_role",
+    "name": "Supabase service_role key exposed",
+    "url": "ai-chat-hub.vercel.app",
+    "source": "https://ai-chat-hub.vercel.app/assets/index-Bn-_nI4v.js"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "aichat.pages.dev",
+    "source": "https://aichat.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.git/config",
+    "url": "ai-tools-hub.pages.dev",
+    "source": "https://ai-tools-hub.pages.dev/.git/config"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.git/HEAD",
+    "url": "ai-tools-hub.pages.dev",
+    "source": "https://ai-tools-hub.pages.dev/.git/HEAD"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "portfolio.pages.dev",
+    "source": "https://portfolio.pages.dev/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.git/config",
+    "url": "portfolio-dashboard.pages.dev",
+    "source": "https://portfolio-dashboard.pages.dev/.git/config"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.git/HEAD",
+    "url": "portfolio-dashboard.pages.dev",
+    "source": "https://portfolio-dashboard.pages.dev/.git/HEAD"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "portfolio-landing.vercel.app",
+    "source": "https://portfolio-landing.vercel.app/.gitignore"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "grunt@1.0.4 has known vulnerabilities",
+    "url": "portfolio-tracker.vercel.app",
+    "source": "Bundle 10"
+  },
+  {
+    "severity": "high",
+    "check_id": "dependency_vuln",
+    "name": "bn.js@4.4.0 has known vulnerabilities",
+    "url": "portfolio-tracker.vercel.app",
+    "source": "Bundle 10"
+  },
+  {
+    "severity": "high",
+    "check_id": "exposed_file",
+    "name": "Sensitive file exposed: /.gitignore",
+    "url": "portfolio-hub.pages.dev",
+    "source": "https://portfolio-hub.pages.dev/.gitignore"
+  }
+]

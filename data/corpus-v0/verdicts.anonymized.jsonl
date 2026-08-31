@@ -1,0 +1,243 @@
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "Kubernetes secretGenerator literal with live Postgres URL and password", "repo": "app-019", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password in compose env", "repo": "app-022", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in Next config and LoadScript", "repo": "app-220", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in Next config and LoadScript", "repo": "app-220", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "Supabase anon JWT (public-by-design, real finding)", "repo": "app-220", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "valid refresh-token JWT committed (commented-out) in frontend JS", "repo": "app-434", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-425", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT ghp_... committed in notes file with clone URLs", "repo": "app-425", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT ghp_... committed in notes file with clone URLs", "repo": "app-425", "task": "2"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is regex variable re_xref_subsection_start in vendored PIL PdfParser.py", "repo": "app-285", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is regex variable re_xref_subsection_start in vendored PIL PdfParser.py", "repo": "app-285", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-391", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "TinyMCE API key in editor component", "repo": "app-214", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_gemini_key", "reason": "Google Gemini API key in generative-language service", "repo": "app-214", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-173", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-017", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-325", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-142", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps script", "repo": "app-321", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps script", "repo": "app-321", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps Embed API key in route.ts", "repo": "app-398", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps Embed API key in route.ts", "repo": "app-398", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps Embed API key in route.ts", "repo": "app-398", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Google Maps API key hardcoded as default param", "repo": "app-398", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Google Maps API key hardcoded as default param", "repo": "app-398", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-237", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-141", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-430", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps script", "repo": "app-412", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Google OAuth client secret GOCSPX-... in client component", "repo": "app-144", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Google OAuth client secret GOCSPX-... in client component", "repo": "app-144", "task": "1"}
+{"verdict": "drop", "confidence": "high", "check_id": "openai_key", "reason": "SETUP.md docs example key \"sk-proj-XXXXXXXXXXXXXXXXXXXXXXXX\", an X-padded placeholder", "repo": "app-447", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-213", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password in README docs", "repo": "app-187", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in template maps script", "repo": "app-108", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in template maps script", "repo": "app-108", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in template maps script", "repo": "app-108", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in template maps script", "repo": "app-108", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in template maps script", "repo": "app-108", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in template maps script", "repo": "app-108", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in template maps script", "repo": "app-108", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in template maps script", "repo": "app-108", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in template maps script", "repo": "app-108", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-440", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-371", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Clever Cloud MySQL password in db.php", "repo": "app-479", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-374", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-494", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-446", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password in server.js", "repo": "app-170", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Flask session signing secret_key committed", "repo": "app-226", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "AWS access key + secret key in Go S3 uploader", "repo": "app-362", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-155", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-453", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-027", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-223", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "OpenWeatherMap API key in weather scripts", "repo": "app-366", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "OpenWeatherMap API key in weather scripts", "repo": "app-366", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "OpenWeatherMap API key in weather scripts", "repo": "app-366", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-122", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Razorpay key_secret (test mode) in checkout code", "repo": "app-357", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Razorpay key_secret (test mode) in checkout code", "repo": "app-357", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-105", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "3"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is tail of image filename \"We&#039;re_hiring_in_Sales_-_horizontal.png\", not a resend key", "repo": "app-020", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "6"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is tail of image filename \"We&#039;re_hiring_in_Sales_-_horizontal.png\", not a resend key", "repo": "app-020", "task": "7"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "9"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "10"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "11"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "12"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is tail of image filename \"We&#039;re_hiring_in_Sales_-_horizontal.png\", not a resend key", "repo": "app-020", "task": "13"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "14"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "15"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "16"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "17"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "18"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "19"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "20"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "21"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "22"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "23"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "24"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "25"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "26"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "27"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is tail of image filename \"We&#039;re_hiring_in_Sales_-_horizontal.png\", not a resend key", "repo": "app-020", "task": "28"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "29"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "30"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "31"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is tail of image filename \"We&#039;re_hiring_in_Sales_-_horizontal.png\", not a resend key", "repo": "app-020", "task": "32"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "real AWS access key ID in S3 presigned URL in page HTML", "repo": "app-020", "task": "33"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-390", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-001", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-246", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-246", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-246", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-246", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-246", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-246", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "openai_key", "reason": "real OpenAI sk-... API key (and org id) in Python code", "repo": "app-225", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "real OpenAI API key string committed", "repo": "app-225", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "openai_key", "reason": "real OpenAI sk-... API key (and org id) in Python code", "repo": "app-225", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "real OpenAI API key string committed", "repo": "app-225", "task": "3"}
+{"verdict": "drop", "confidence": "high", "check_id": "google_api_key", "reason": "firebaseConfig web API key (initializeApp/messagingSenderId), public-by-design client config", "repo": "app-462", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Riot RGAPI-... key in (commented) unit test", "repo": "app-012", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-236", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-236", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-236", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration script disables row level security on tables", "repo": "app-055", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration script disables row level security on tables", "repo": "app-055", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration script disables row level security on tables", "repo": "app-055", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_rls_disabled", "reason": "migration script disables row level security on tables", "repo": "app-055", "task": "3"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "jest test fixture 'access_token_123' in social-accounts.service.spec.ts", "repo": "app-055", "task": "4"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "jest test fixture 'access_token_123' in social-accounts.service.spec.ts", "repo": "app-055", "task": "5"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "jest test fixture 'access_token_123' in social-accounts.service.spec.ts", "repo": "app-055", "task": "6"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "jest test fixture 'access_token_123' in social-accounts.service.spec.ts", "repo": "app-055", "task": "7"}
+{"verdict": "drop", "confidence": "high", "check_id": "generic_secret", "reason": "jest.setup-env.ts default test ENCRYPTION_KEY '0123...cdef', explicitly test-only", "repo": "app-055", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "Supabase anon JWT fallback (public-by-design, real finding)", "repo": "app-445", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-339", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Cloudinary api_secret in config", "repo": "app-339", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-339", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-339", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-175", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "stripe_test_secret", "reason": "Paystack test secret key sk_test_... in compose env", "repo": "app-014", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "resend_api_key", "reason": "real Resend API key in compose env", "repo": "app-014", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "live Supabase Postgres URL with real password", "repo": "app-014", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps script", "repo": "app-433", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps script", "repo": "app-433", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps script", "repo": "app-433", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps script", "repo": "app-433", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps script", "repo": "app-433", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps script", "repo": "app-433", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps script", "repo": "app-433", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "fast2sms API key in server config", "repo": "app-165", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-113", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-224", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-063", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-063", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-063", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-063", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-063", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "github_token", "reason": "full GitHub PAT committed as Octokit auth token", "repo": "app-063", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-309", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "TinyMCE API key in editor component", "repo": "app-317", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_gemini_key", "reason": "Google Gemini API key in service", "repo": "app-317", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "openai_key", "reason": "real OpenAI sk-proj-... key in Java controller", "repo": "app-317", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "openai_key", "reason": "real OpenAI sk-proj-... key in Java controller", "repo": "app-317", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "openai_key", "reason": "real OpenAI sk-proj-... key in Java controller", "repo": "app-317", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "openai_key", "reason": "real OpenAI sk-proj-... key in Java controller", "repo": "app-317", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "OpenWeatherMap API key in weather app", "repo": "app-351", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_gemini_key", "reason": "Google Gemini API key hardcoded in test script", "repo": "app-351", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "AWS access key + secret key in application.yml", "repo": "app-159", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-485", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-091", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password (commented)", "repo": "app-493", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "db_connection_string", "reason": "compose DB_URL targets local \"MONGO-DB\" docker service labeled local instance, not externally exposed", "repo": "app-493", "task": "1"}
+{"verdict": "drop", "confidence": "high", "check_id": "db_connection_string", "reason": "commented-out docs example DB_URL on local MONGO-DB service in compose tutorial", "repo": "app-493", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-090", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-255", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-256", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-065", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-264", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps/Geocoding API key in Flask app", "repo": "app-270", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps/Geocoding API key in Flask app", "repo": "app-270", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "Google Geocoding API key hardcoded in app.py", "repo": "app-270", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps/Geocoding API key in Flask app", "repo": "app-270", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-509", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-174", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-143", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-304", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "TomTom API key in Angular service", "repo": "app-329", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-450", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-210", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto acme/jws_test.go testKeyPEM fixture, public test data", "repo": "app-324", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto acme/jws_test.go testKeyPEM fixture, public test data", "repo": "app-324", "task": "1"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto acme/jws_test.go testKeyPEM fixture, public test data", "repo": "app-324", "task": "2"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto acme/jws_test.go testKeyPEM fixture, public test data", "repo": "app-324", "task": "3"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "4"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "5"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "6"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "7"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "8"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "9"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "10"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "11"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "12"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "13"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "14"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "15"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "16"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "17"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "18"}
+{"verdict": "drop", "confidence": "high", "check_id": "private_key", "reason": "vendored golang.org/x/crypto ssh/testdata/keys.go PEM fixture, public test data", "repo": "app-324", "task": "19"}
+{"verdict": "drop", "confidence": "high", "check_id": "db_connection_string", "reason": "vendored pgx/v5 errors_test.go fixture \"postgresql://foo:password@host\", library test data", "repo": "app-324", "task": "20"}
+{"verdict": "drop", "confidence": "high", "check_id": "db_connection_string", "reason": "vendored pgx/v5 errors_test.go fixture \"postgresql://foo::pasword@host:1:\", library test data", "repo": "app-324", "task": "21"}
+{"verdict": "drop", "confidence": "high", "check_id": "db_connection_string", "reason": "vendored pgx/v5 errors_test.go fixture \"postgresql://foo:password@host\", library test data", "repo": "app-324", "task": "22"}
+{"verdict": "drop", "confidence": "high", "check_id": "db_connection_string", "reason": "tutorial k8s secrets.yml example with dummy password \"foobarbaz\" on internal db-postgresql host", "repo": "app-324", "task": "23"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-324", "task": "24"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps scripts", "repo": "app-337", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps scripts", "repo": "app-337", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps scripts", "repo": "app-337", "task": "2"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps scripts", "repo": "app-337", "task": "3"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps scripts", "repo": "app-337", "task": "4"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps scripts", "repo": "app-337", "task": "5"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps scripts", "repo": "app-337", "task": "6"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in maps scripts", "repo": "app-337", "task": "7"}
+{"verdict": "drop", "confidence": "high", "check_id": "google_api_key", "reason": "commented-out firebaseConfig apiKey for campus-safety-fcm, public-by-design client config", "repo": "app-337", "task": "8"}
+{"verdict": "keep", "confidence": "high", "check_id": "aws_access_key", "reason": "AWS access key + secret key in application.yml", "repo": "app-286", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-080", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-205", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-086", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-086", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "google_api_key", "reason": "Google Maps API key in WordPress page HTML", "repo": "app-389", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-005", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-420", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "express-session secret committed", "repo": "app-008", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "0"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "1"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "2"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "3"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "4"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "5"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "6"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "7"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "8"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "9"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "10"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "11"}
+{"verdict": "drop", "confidence": "high", "check_id": "resend_api_key", "reason": "match is minified htmlparser.js regex identifier re_parseAttr_*, not a resend key", "repo": "app-331", "task": "12"}
+{"verdict": "drop", "confidence": "high", "check_id": "github_token", "reason": "github_pat value is a form input placeholder attribute (sample hint text), not a live token", "repo": "app-177", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-302", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-302", "task": "1"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-052", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "generic_secret", "reason": "bugsnag API key in page HTML", "repo": "app-277", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "db_connection_string", "reason": "MongoDB Atlas URI with real password", "repo": "app-473", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "Supabase anon JWT in edge function docs (public-by-design, real finding)", "repo": "app-265", "task": "0"}
+{"verdict": "keep", "confidence": "high", "check_id": "supabase_anon", "reason": "Supabase anon JWT in edge function docs (public-by-design, real finding)", "repo": "app-265", "task": "1"}

@@ -1,0 +1,35 @@
+{
+  "n": 881,
+  "generated_at": "2026-08-13T16:07:24.877742+00:00",
+  "repo_tiers": {
+    "A \u2014 data access": 88,
+    "B \u2014 cost": 22,
+    "C \u2014 bounded": 186,
+    "D \u2014 none": 585
+  },
+  "class_hits": {
+    "C \u2014 bounded": 224,
+    "A \u2014 data access": 88,
+    "B \u2014 cost": 40
+  },
+  "supabase_bound": {
+    "anon_repos": 210,
+    "rls_enabled": 183,
+    "rls_disabled": 27,
+    "service_role_repos": 18
+  },
+  "tier_a_structural_repos": 64,
+  "env_secret_lines": {
+    "A \u2014 data access": 174,
+    "B \u2014 cost": 13,
+    "C \u2014 bounded": 1,
+    "D \u2014 none": 0
+  },
+  "env_secret_repos": {
+    "A \u2014 data access": 51,
+    "B \u2014 cost": 12,
+    "C \u2014 bounded": 1,
+    "D \u2014 none": 0
+  },
+  "verified_zero_drop_classes": []
+}

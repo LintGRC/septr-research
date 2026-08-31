@@ -1,0 +1,54 @@
+{
+  "n": 1267,
+  "n_scanned": 1258,
+  "repo_tiers": {
+    "A \u2014 data access": 4,
+    "B \u2014 cost": 29,
+    "C \u2014 bounded": 43,
+    "D \u2014 none": 1223
+  },
+  "class_hits": {
+    "A \u2014 data access": 4,
+    "B \u2014 cost": 32,
+    "C \u2014 bounded": 60,
+    "D \u2014 none": 4619
+  },
+  "tier_a_urls": [
+    "https://ai-chat-hub.vercel.app",
+    "https://gpt-dashboard.netlify.app",
+    "https://gptapp.pages.dev",
+    "https://supabase-starter.vercel.app/"
+  ],
+  "tier_b_urls": [
+    "https://agent-pages.pages.dev",
+    "https://agent-planner.vercel.app",
+    "https://agent-tool.netlify.app",
+    "https://agents-admin.netlify.app",
+    "https://agents-demo.netlify.app",
+    "https://agentsapp.netlify.app",
+    "https://ai-agent-tool.pages.dev",
+    "https://ai-agent-web.vercel.app",
+    "https://ai-chat-site.vercel.app",
+    "https://ai-chat-tool.netlify.app",
+    "https://ai-tools-manager.vercel.app",
+    "https://bot-webapp.pages.dev",
+    "https://chat-starter.pages.dev",
+    "https://chatgpt-admin.vercel.app",
+    "https://chatgpt-clone-project.netlify.app",
+    "https://chatgpt-web.pages.dev",
+    "https://gpt-demo.netlify.app",
+    "https://gpt-tool.vercel.app",
+    "https://gptapp.pages.dev",
+    "https://journal-demo.pages.dev",
+    "https://journal-studio.pages.dev",
+    "https://journal-tracker.pages.dev",
+    "https://journal.vercel.app",
+    "https://llm-site.pages.dev",
+    "https://llm-starter.vercel.app",
+    "https://notes-builder.vercel.app",
+    "https://todo-dashboard.netlify.app",
+    "https://todo-webapp.netlify.app",
+    "https://todolist-generator.vercel.app"
+  ],
+  "summary": "4 apps grant full data access (service_role keys), 29 leak billing/quotas (API keys), 43 have bounded exposure (vulns, config, docs), 1223 are advisory only."
+}

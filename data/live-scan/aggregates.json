@@ -1,0 +1,33 @@
+{
+  "total_urls": 1267,
+  "scanned": 1258,
+  "failed": 9,
+  "severity_distribution": {
+    "medium": 3649,
+    "low": 988,
+    "critical": 11,
+    "high": 67
+  },
+  "top_findings": {
+    "missing_header": 4505,
+    "supabase_anon": 73,
+    "no_bundles": 41,
+    "exposed_file": 36,
+    "dependency_vuln": 19,
+    "generic_secret": 11,
+    "google_api_key": 11,
+    "openai_key": 7,
+    "supabase_service_role": 4,
+    "docs_exposed": 4,
+    "google_gemini_key": 3,
+    "hallucinated_package": 1
+  },
+  "platforms": {
+    "unknown": 1180,
+    "v0": 14,
+    "bolt": 2,
+    "cursor": 1,
+    "lovable": 67,
+    "replit": 3
+  }
+}
