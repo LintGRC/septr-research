@@ -282,8 +282,9 @@
       They ship real service-role keys, database credentials, and hardcoded
       AWS access keys. Septr's A-band share (84% vs ogbuilds' 64%) is
       higher because we role-verify Supabase keys from the JWT payload
-      itself: <strong>0/269 false positives</strong> on public-by-design
-      anon keys.
+      itself: <strong>0/269 role-verified JWT findings were false
+      positives</strong> — 202 real anon keys (public by design) and 67
+      real service-role keys.
     </div>
   </div>
 </section>
@@ -301,9 +302,10 @@
          alt="Credential classes by repo: Supabase JWT 215, generic secret 87, DB connection string 41, Google API key 36">
     <div class="callout">
       The largest class — <strong>Supabase JWTs at 24.4%</strong> — is the
-      ambiguous one. After role-verification from the JWT payload, all
-      269 anon-key findings verified as public-by-design. The class
-      nobody would argue about — committed database connection strings —
+      ambiguous one. Role-verification from the JWT payload splits it: all
+      202 anon-key findings verified as real but public-by-design, and all
+      67 service-role findings verified as real — 0 of 269 dropped. The
+      class nobody would argue about — committed database connection strings —
       sits at a quiet 4.7%. This is why we verify before reporting a number.
     </div>
   </div>
