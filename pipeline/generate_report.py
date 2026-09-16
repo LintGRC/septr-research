@@ -260,7 +260,7 @@ def chart_verification(overturn, out: Path) -> None:
             Patch(facecolor=BLUE, edgecolor="none", label="kept (real)"),
             Patch(facecolor=RED, edgecolor="none", label="dropped (false positive)"),
         ],
-        loc="lower right", frameon=False, fontsize=14,
+        loc="upper right", frameon=False, fontsize=14,
         labelspacing=0.8,
     )
     ax.text(0, -0.7, "361 findings adjudicated with surrounding code — "
@@ -391,22 +391,28 @@ def chart_blast(blast, out: Path) -> None:
         ax.text(-n * 0.012, y, label, ha="right", va="center",
                 fontsize=15, color=GRAY_900, fontweight="600",
                 fontfamily=_FONT)
-        ax.text(total + n * 0.012, y, f"{total}", va="center",
+        # Place count inside the bar to avoid overlap with legend
+        ax.text(total * 0.5, y, f"{total}", va="center", ha="center",
                 fontsize=16, color=GRAY_900, fontweight="800",
                 fontfamily=_FONT)
 
     def _annot(x, y, text, color):
-        ax.text(x + n * 0.012, y, text, va="center", fontsize=13,
+        ax.text(x + n * 0.012, y, text, va="center", fontsize=12,
                 color=color, fontweight="700", fontfamily=_FONT)
 
-    _annot(a, 1, f"{a} would grant data access if valid", RED)
-    _annot(b, 1, f"{b} burn money if used", AMBER)
-    _annot(c, 1, f"{c} bounded by design", BLUE)
-    _annot(d, 1, f"{d} clean or hygiene only", GRAY_400)
-    _annot(bound["rls_disabled"], 0, f"{bound['rls_disabled']} with RLS "
-           "disabled — bound broken", RED)
-    _annot(bound["rls_enabled"], 0, f"{bound['rls_enabled']} bounded by RLS",
-           BLUE)
+    # Place labels at the right edge in a vertical column to avoid overlap
+    ax.text(n + n * 0.03, 0, f"{d} clean or hygiene only", va="center",
+            fontsize=12, color=GRAY_400, fontweight="700", fontfamily=_FONT)
+    ax.text(n + n * 0.03, 0.35, f"{b} burn money if used", va="center",
+            fontsize=12, color=AMBER, fontweight="700", fontfamily=_FONT)
+    ax.text(n + n * 0.03, 0.70, f"{a} would grant data access if valid", va="center",
+            fontsize=12, color=RED, fontweight="700", fontfamily=_FONT)
+    ax.text(n + n * 0.03, 1.05, f"{c} bounded by design", va="center",
+            fontsize=12, color=BLUE, fontweight="700", fontfamily=_FONT)
+    ax.text(n + n * 0.03, 1.40, f"{bound['rls_disabled']} with RLS disabled — bound broken",
+            va="center", fontsize=12, color=RED, fontweight="700", fontfamily=_FONT)
+    ax.text(n + n * 0.03, 1.75, f"{bound['rls_enabled']} bounded by RLS",
+            va="center", fontsize=12, color=BLUE, fontweight="700", fontfamily=_FONT)
 
     if bound["rls_disabled"]:
         ax.annotate(
@@ -455,7 +461,7 @@ def chart_locations(locs, out: Path) -> None:
                  Patch(facecolor=AMBER, edgecolor="none", label="B — cost"),
                  Patch(facecolor=BLUE, edgecolor="none", label="C — bounded"),
                  Patch(facecolor=GRAY_100, edgecolor=GRAY_200, label="D — none")],
-        loc="lower right", frameon=False, fontsize=13, ncol=2,
+        loc="upper right", frameon=False, fontsize=13, ncol=2,
         labelspacing=0.6,
     )
     fa = locs["frontend_tier_a"]["repos"]
@@ -497,7 +503,7 @@ def chart_comparison(pops, out: Path) -> None:
     n_pops = len(pops)
     bar_h = 0.50
     group_gap = 1.0
-    ax.set_xlim(0, 100)
+    ax.set_xlim(0, 120)
     ax.set_ylim(-0.6, n_metrics * group_gap + 0.6)
     ax.axis("off")
     for mi, (mname, fn) in enumerate(metrics):
@@ -510,8 +516,10 @@ def chart_comparison(pops, out: Path) -> None:
             except Exception:
                 val = 0.0
             y = y_base + (pi - (n_pops - 1) / 2) * 0.22
-            _rounded_bar(ax, 0, y - bar_h / 2, min(val, 100), bar_h, color)
-            ax.text(min(val, 100) + 1.2, y, f"{val:.1f}",
+            bar_w = min(val, 100)
+            _rounded_bar(ax, 0, y - bar_h / 2, bar_w, bar_h, color)
+            # Place all labels at a fixed x position to avoid overlap
+            ax.text(103, y, f"{val:.1f}",
                     va="center", fontsize=12, color=GRAY_500,
                     fontweight="600", fontfamily=_FONT)
     ax.legend(
