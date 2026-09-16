@@ -214,7 +214,7 @@ def chart_credentials(per_class, n: int, out: Path) -> None:
     ax.annotate(
         "anon keys — public by design\nrole-verified 0/269 false positives",
         xy=(counts[0] - max_c * 0.02, 0),
-        xytext=(max_c * 0.55, 3.5),
+        xytext=(max_c * 0.55, len(top) + 0.8),
         fontsize=14, color=AMBER, fontweight="700", fontfamily=_FONT,
         arrowprops=dict(arrowstyle="->", color=AMBER, linewidth=1.8,
                         connectionstyle="arc3,rad=0.15"),
@@ -464,8 +464,8 @@ def chart_locations(locs, out: Path) -> None:
             f"{by_loc['frontend']['A — data access']} tier-A findings in the "
             f"frontend bundle —\n{fa} repos publish data-access credentials\nto "
             "every visitor",
-            xy=(by_loc["frontend"]["A — data access"], 6.2),
-            xytext=(max_total * 0.5, len(order) - 0.7),
+            xy=(by_loc["frontend"]["A — data access"], len(order) - 1),
+            xytext=(max_total * 0.5, len(order) + 1.2),
             fontsize=13, color=RED, fontweight="700", fontfamily=_FONT,
             arrowprops=dict(arrowstyle="->", color=RED, linewidth=1.5),
             ha="center",
@@ -495,7 +495,7 @@ def chart_comparison(pops, out: Path) -> None:
     fig, ax = _new_ax()
     n_metrics = len(metrics)
     n_pops = len(pops)
-    bar_h = 0.62
+    bar_h = 0.50
     group_gap = 1.0
     ax.set_xlim(0, 100)
     ax.set_ylim(-0.6, n_metrics * group_gap + 0.6)
@@ -509,7 +509,7 @@ def chart_comparison(pops, out: Path) -> None:
                 val = fn(agg)
             except Exception:
                 val = 0.0
-            y = y_base + (pi - (n_pops - 1) / 2) * 0.18
+            y = y_base + (pi - (n_pops - 1) / 2) * 0.22
             _rounded_bar(ax, 0, y - bar_h / 2, min(val, 100), bar_h, color)
             ax.text(min(val, 100) + 1.2, y, f"{val:.1f}",
                     va="center", fontsize=12, color=GRAY_500,
@@ -620,7 +620,7 @@ def chart_market_composition(tax: dict, out: Path) -> None:
         f"{tax['no_manifest_pct']:.0f}% have no dependency manifest —\n"
         f"not apps at all; {tax['app_shaped_pct']:.0f}% are app-shaped\n"
         f"(median {tax['median_files']} files / {tax['median_bytes'] // 1024} KB)",
-        xy=(max_c, len(fw) - 0.5), xytext=(max_c * 0.55, len(fw) + 3.1),
+        xy=(max_c, len(fw) - 0.5), xytext=(max_c * 0.55, len(fw) + 1.5),
         fontsize=14, color=GRAY_900, fontweight="700", fontfamily=_FONT,
         arrowprops=dict(arrowstyle="->", color=GRAY_400, linewidth=1.5),
         ha="center",
