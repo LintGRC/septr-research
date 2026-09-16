@@ -6,199 +6,14 @@
 <title>1 in 4 AI-built apps ships its .env file — Septr corpus study</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --blue: #2563eb; --amber: #d97706; --green: #059669;
-    --red: #dc2626; --gray-50: #fafafa; --gray-100: #f3f4f6;
-    --gray-200: #e5e7eb; --gray-400: #9ca3af;
-    --gray-500: #6b7280; --gray-900: #111827;
-  }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI",
-                 Helvetica, Arial, sans-serif;
-    color: var(--gray-900); background: #fff; line-height: 1.65;
-    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-  }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 28px; }
-
-  /* ── nav ── */
-  nav.top { padding: 20px 0; border-bottom: 1px solid var(--gray-200); }
-  nav.top .inner {
-    display: flex; align-items: center; justify-content: space-between;
-  }
-  nav.top .brand { font-weight: 800; font-size: 16px; color: var(--gray-900);
-                    text-decoration: none; letter-spacing: -.01em; }
-  nav.top .links { display: flex; gap: 28px; }
-  nav.top .links a {
-    font-size: 14px; font-weight: 500; color: var(--gray-500);
-    text-decoration: none; transition: color .15s;
-  }
-  nav.top .links a:hover { color: var(--gray-900); }
-
-  /* ── hero ── */
-  header.hero { padding: 96px 0 72px; }
-  .kicker {
-    text-transform: uppercase; letter-spacing: .14em; font-size: 12px;
-    font-weight: 600; color: var(--gray-400); margin-bottom: 20px;
-  }
-  h1 {
-    font-size: 52px; line-height: 1.1; letter-spacing: -.03em;
-    font-weight: 800; max-width: 800px;
-  }
-  h1 .accent { color: var(--blue); }
-  .sub {
-    font-size: 19px; color: var(--gray-500); margin-top: 20px;
-    max-width: 680px; line-height: 1.7;
-  }
-  .cta-row { display: flex; gap: 14px; margin-top: 36px; align-items: center; }
-  .cta {
-    display: inline-flex; align-items: center; gap: 8px;
-    background: var(--blue); color: #fff; padding: 14px 28px;
-    border-radius: 10px; font-size: 15px; font-weight: 600;
-    text-decoration: none; transition: background .15s, box-shadow .15s;
-  }
-  .cta:hover { background: #1d4ed8; box-shadow: 0 4px 12px rgba(37,99,235,.3); }
-  .cta.secondary {
-    background: var(--gray-100); color: var(--gray-900);
-  }
-  .cta.secondary:hover { background: var(--gray-200); box-shadow: none; }
-
-  .stats {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 16px; margin-top: 48px;
-  }
-  .stat {
-    background: var(--gray-50); border: 1px solid var(--gray-200);
-    border-radius: 14px; padding: 24px 26px;
-  }
-  .stat .num { font-size: 40px; font-weight: 800; letter-spacing: -.03em; line-height: 1; }
-  .stat .lbl { font-size: 14px; color: var(--gray-500); margin-top: 8px; line-height: 1.4; }
-  .stat.amber .num { color: var(--amber); }
-  .stat.green .num { color: var(--green); }
-  .stat.red .num { color: var(--red); }
-  .stat.blue .num { color: var(--blue); }
-
-  /* ── narrative sections ── */
-  section.story { padding: 80px 0; border-top: 1px solid var(--gray-200); }
-  section.story:first-of-type { border-top: none; }
-  h2 {
-    font-size: 34px; letter-spacing: -.02em; font-weight: 800;
-    margin-bottom: 12px; line-height: 1.2;
-  }
-  .badge {
-    display: inline-block;
-    font-size: 11px; font-weight: 600; text-transform: uppercase;
-    letter-spacing: .1em; background: var(--gray-100); color: var(--gray-500);
-    border-radius: 999px; padding: 5px 12px; margin-left: 12px;
-    vertical-align: middle; position: relative; top: -2px;
-  }
-  .lead {
-    font-size: 18px; color: var(--gray-500); max-width: 740px;
-    margin-bottom: 36px; line-height: 1.7;
-  }
-  .story img.chart {
-    width: 100%; height: auto; border-radius: 14px;
-    border: 1px solid var(--gray-200); display: block;
-    box-shadow: 0 1px 3px rgba(0,0,0,.04);
-  }
-  .callout {
-    margin-top: 36px; background: var(--gray-50); border: 1px solid var(--gray-200);
-    border-radius: 14px; padding: 24px 28px; font-size: 16px;
-    border-left: 4px solid var(--blue); line-height: 1.7;
-  }
-  .callout.amber { border-left-color: var(--amber); }
-  .callout.red { border-left-color: var(--red); }
-  .callout.green { border-left-color: var(--green); }
-  .callout strong { font-weight: 700; }
-
-  /* ── methodology section ── */
-  section.method { padding: 80px 0; border-top: 1px solid var(--gray-200); }
-  section.method h2 { margin-bottom: 20px; }
-  section.method p {
-    font-size: 16px; color: var(--gray-500); max-width: 780px;
-    margin-bottom: 18px; line-height: 1.8;
-  }
-  section.method p strong { color: var(--gray-900); font-weight: 600; }
-  section.method code {
-    font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', monospace;
-    font-size: 14px; background: var(--gray-100); padding: 2px 7px;
-    border-radius: 5px; color: var(--gray-900);
-  }
-
-  /* ── download section ── */
-  section.download { padding: 80px 0; border-top: 1px solid var(--gray-200); }
-  section.download h2 { margin-bottom: 16px; }
-  section.download p {
-    font-size: 16px; color: var(--gray-500); max-width: 700px;
-    margin-bottom: 28px; line-height: 1.7;
-  }
-  .dl-grid {
-    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 14px;
-  }
-  .dl-card {
-    display: block; padding: 18px 22px; border-radius: 12px;
-    border: 1px solid var(--gray-200); text-decoration: none;
-    transition: border-color .15s, box-shadow .15s;
-  }
-  .dl-card:hover { border-color: var(--blue); box-shadow: 0 2px 8px rgba(37,99,235,.1); }
-  .dl-card .name { font-size: 14px; font-weight: 600; color: var(--gray-900); }
-  .dl-card .desc { font-size: 13px; color: var(--gray-400); margin-top: 4px; }
-
-  /* ── comparison section ── */
-  section.compare { padding: 80px 0; border-top: 1px solid var(--gray-200); }
-  section.compare h2 { margin-bottom: 16px; }
-  section.compare p {
-    font-size: 18px; color: var(--gray-500); max-width: 740px;
-    margin-bottom: 20px; line-height: 1.7;
-  }
-  section.compare .link {
-    display: inline-flex; align-items: center; gap: 6px;
-    font-size: 15px; font-weight: 600; color: var(--blue); text-decoration: none;
-  }
-  section.compare .link:hover { text-decoration: underline; }
-
-  /* ── bottom CTA ── */
-  section.cta-section {
-    padding: 80px 0; text-align: center;
-    background: var(--gray-50); border-top: 1px solid var(--gray-200);
-  }
-  section.cta-section h2 { margin-bottom: 12px; }
-  section.cta-section p {
-    font-size: 17px; color: var(--gray-500); margin-bottom: 32px;
-    max-width: 560px; margin-left: auto; margin-right: auto;
-  }
-
-  /* ── footer ── */
-  footer {
-    background: var(--gray-900); color: var(--gray-400);
-    padding: 56px 0 64px; font-size: 14px;
-  }
-  footer h3 { color: #fff; font-size: 15px; font-weight: 700; margin-bottom: 12px; }
-  footer a { color: #93c5fd; text-decoration: none; }
-  footer a:hover { text-decoration: underline; }
-  footer .cols { display: grid; grid-template-columns: 2fr 1fr; gap: 48px; }
-  footer .copy { margin-top: 36px; padding-top: 24px; border-top: 1px solid #374151;
-                 font-size: 13px; }
-
-  @media (max-width: 720px) {
-    h1 { font-size: 34px; }
-    h2 { font-size: 26px; }
-    header.hero { padding: 64px 0 48px; }
-    section.story, section.method, section.download, section.compare,
-    section.cta-section { padding: 56px 0; }
-    .stats { grid-template-columns: 1fr 1fr; }
-    footer .cols { grid-template-columns: 1fr; gap: 32px; }
-  }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="septr.css">
 </head>
 <body>
 
 <nav class="top">
   <div class="wrap inner">
-    <a class="brand" href="/">Septr</a>
+    <a class="brand" href="/">septr<em>.</em></a>
     <div class="links">
       <a href="v0/index.html">Code leaks</a>
       <a href="aicoded/index.html">Generators</a>
@@ -207,6 +22,7 @@
       <a href="../studies/CORPUS_STUDY.md">Full study</a>
       <a href="https://ogbuilds.ai/studies/lovable-app-security">ogbuilds comparison</a>
     </div>
+      <a class="header-cta" href="https://app.septr.dev/sign-up">Get an API key &#8594;</a>
   </div>
 </nav>
 
