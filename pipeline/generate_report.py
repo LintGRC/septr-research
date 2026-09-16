@@ -391,28 +391,31 @@ def chart_blast(blast, out: Path) -> None:
         ax.text(-n * 0.012, y, label, ha="right", va="center",
                 fontsize=15, color=GRAY_900, fontweight="600",
                 fontfamily=_FONT)
-        # Place count inside the bar to avoid overlap with legend
-        ax.text(total * 0.5, y, f"{total}", va="center", ha="center",
+        # Place count to the right of the bar to avoid overlap with label
+        ax.text(total + n * 0.015, y, f"{total}", va="center", ha="left",
                 fontsize=16, color=GRAY_900, fontweight="800",
                 fontfamily=_FONT)
 
-    def _annot(x, y, text, color):
-        ax.text(x + n * 0.012, y, text, va="center", fontsize=12,
-                color=color, fontweight="700", fontfamily=_FONT)
+    # Place legend labels in a column to the right, spaced to avoid overlap
+    legend_x = n + n * 0.08
+    legend_items = [
+        (d, GRAY_400, "clean or hygiene only"),
+        (b, AMBER, "burn money if used"),
+        (a, RED, "would grant data access if valid"),
+        (c, BLUE, "bounded by design"),
+    ]
+    for i, (count, color, text) in enumerate(legend_items):
+        ax.text(legend_x, -0.15 + i * 0.45, f"{count} {text}", va="center",
+                fontsize=12, color=color, fontweight="700", fontfamily=_FONT)
 
-    # Place labels at the right edge in a vertical column to avoid overlap
-    ax.text(n + n * 0.03, 0, f"{d} clean or hygiene only", va="center",
-            fontsize=12, color=GRAY_400, fontweight="700", fontfamily=_FONT)
-    ax.text(n + n * 0.03, 0.35, f"{b} burn money if used", va="center",
-            fontsize=12, color=AMBER, fontweight="700", fontfamily=_FONT)
-    ax.text(n + n * 0.03, 0.70, f"{a} would grant data access if valid", va="center",
-            fontsize=12, color=RED, fontweight="700", fontfamily=_FONT)
-    ax.text(n + n * 0.03, 1.05, f"{c} bounded by design", va="center",
-            fontsize=12, color=BLUE, fontweight="700", fontfamily=_FONT)
-    ax.text(n + n * 0.03, 1.40, f"{bound['rls_disabled']} with RLS disabled — bound broken",
-            va="center", fontsize=12, color=RED, fontweight="700", fontfamily=_FONT)
-    ax.text(n + n * 0.03, 1.75, f"{bound['rls_enabled']} bounded by RLS",
-            va="center", fontsize=12, color=BLUE, fontweight="700", fontfamily=_FONT)
+    # Supabase-specific labels above the bars
+    sup_x = n + n * 0.08
+    ax.text(sup_x, 1.7, f"{bound['rls_enabled']} bounded by RLS",
+            va="center", fontsize=12, color=BLUE, fontweight="700",
+            fontfamily=_FONT)
+    ax.text(sup_x, 2.15, f"{bound['rls_disabled']} with RLS disabled — bound broken",
+            va="center", fontsize=12, color=RED, fontweight="700",
+            fontfamily=_FONT)
 
     if bound["rls_disabled"]:
         ax.annotate(
@@ -423,8 +426,12 @@ def chart_blast(blast, out: Path) -> None:
             arrowprops=dict(arrowstyle="->", color=GRAY_400, linewidth=1.5),
             ha="center",
         )
-    _stat_line(fig, "Blast radius — what the findings would actually do",
-               f"{100 * a / n:.1f}%")
+    # Title and percentage on separate lines to avoid overlap
+    fig.text(0.04, 0.95, "Blast radius — what the findings would actually do",
+             fontsize=18, color=GRAY_400, fontweight="500", fontfamily=_FONT)
+    fig.text(0.96, 0.95, f"{100 * a / n:.1f}%",
+             fontsize=28, color=GRAY_900, ha="right",
+             fontweight="800", fontfamily=_FONT)
     _save(fig, out, "07-blast.png")
 
 
