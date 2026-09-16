@@ -180,7 +180,7 @@ def chart_grades(grades: Counter, clean_k: int, median: int, mean: float,
         ax.text(c + max_c * 0.008, y, label, va="center", fontsize=16,
                 color=GRAY_900, fontweight="700", fontfamily=_FONT)
     ax.set_yticks(ys)
-    ax.set_yticklabels([f"  {g}" for g in order], fontsize=20, color=GRAY_900,
+    ax.set_yticklabels([f"  {g}" for g in order], fontsize=16, color=GRAY_900,
                        fontweight="800", fontfamily=_FONT)
     ax.text(max_c * 1.15, len(order) - 0.35,
             f"{clean_k} apps perfectly clean  ·  median {median}  ·  mean {mean:.1f}",
@@ -245,14 +245,14 @@ def chart_verification(overturn, out: Path) -> None:
             pct = 100 * d / total
             if d:
                 ax.text(total + max_total * 0.015, y,
-                        f"{pct:.0f}% dropped", va="center", fontsize=13,
+                        f"{pct:.0f}% dropped", va="center", fontsize=14,
                         color=RED, fontweight="700", fontfamily=_FONT)
             else:
                 ax.text(k + max_total * 0.015, y, "0% dropped",
-                        va="center", fontsize=13, color=GREEN,
+                        va="center", fontsize=14, color=GREEN,
                         fontweight="700", fontfamily=_FONT)
     ax.set_yticks(ys)
-    ax.set_yticklabels(names, fontsize=14, color=GRAY_900, fontweight="500",
+    ax.set_yticklabels(names, fontsize=16, color=GRAY_900, fontweight="500",
                        fontfamily=_FONT)
     from matplotlib.patches import Patch
     ax.legend(
@@ -260,7 +260,7 @@ def chart_verification(overturn, out: Path) -> None:
             Patch(facecolor=BLUE, edgecolor="none", label="kept (real)"),
             Patch(facecolor=RED, edgecolor="none", label="dropped (false positive)"),
         ],
-        loc="upper right", frameon=False, fontsize=14,
+        loc="upper right", frameon=False, fontsize=13,
         labelspacing=0.8,
     )
     ax.text(0, -0.7, "361 findings adjudicated with surrounding code — "
@@ -343,7 +343,7 @@ def chart_scores(bands: dict, q1: int, median: int, mean: float,
     for x, c in zip(xs, counts):
         if c >= 10:
             ax.text(x, c + max(counts) * 0.015, str(c), ha="center",
-                    fontsize=12, color=GRAY_400, fontfamily=_FONT)
+                    fontsize=14, color=GRAY_400, fontfamily=_FONT)
     ax.axvline(median, color=GRAY_900, linestyle="--", linewidth=1.8, zorder=2)
     ax.text(median, max(counts) * 1.08, f"median {median}", fontsize=13,
             color=GRAY_900, fontweight="700", ha="center", fontfamily=_FONT)
@@ -386,14 +386,14 @@ def chart_blast(blast, out: Path) -> None:
         for size, color in segs:
             if size == 0:
                 continue
-            ax.barh(y, size, left=x, color=color, height=0.55, zorder=3)
+            ax.barh(y, size, left=x, color=color, height=0.66, zorder=3)
             x += size
         ax.text(-n * 0.012, y, label, ha="right", va="center",
-                fontsize=15, color=GRAY_900, fontweight="600",
+                fontsize=16, color=GRAY_900, fontweight="600",
                 fontfamily=_FONT)
         # Place count to the right of the bar to avoid overlap with label
         ax.text(total + n * 0.015, y, f"{total}", va="center", ha="left",
-                fontsize=16, color=GRAY_900, fontweight="800",
+                fontsize=14, color=GRAY_900, fontweight="800",
                 fontfamily=_FONT)
 
     # Place legend labels in a column to the right, spaced to avoid overlap
@@ -406,15 +406,15 @@ def chart_blast(blast, out: Path) -> None:
     ]
     for i, (count, color, text) in enumerate(legend_items):
         ax.text(legend_x, -0.15 + i * 0.45, f"{count} {text}", va="center",
-                fontsize=12, color=color, fontweight="700", fontfamily=_FONT)
+                fontsize=13, color=color, fontweight="700", fontfamily=_FONT)
 
     # Supabase-specific labels above the bars
     sup_x = n + n * 0.08
     ax.text(sup_x, 1.7, f"{bound['rls_enabled']} bounded by RLS",
-            va="center", fontsize=12, color=BLUE, fontweight="700",
+            va="center", fontsize=13, color=BLUE, fontweight="700",
             fontfamily=_FONT)
     ax.text(sup_x, 2.15, f"{bound['rls_disabled']} with RLS disabled — bound broken",
-            va="center", fontsize=12, color=RED, fontweight="700",
+            va="center", fontsize=13, color=RED, fontweight="700",
             fontfamily=_FONT)
 
     if bound["rls_disabled"]:
@@ -428,7 +428,7 @@ def chart_blast(blast, out: Path) -> None:
         )
     # Title and percentage on separate lines to avoid overlap
     fig.text(0.04, 0.95, "Blast radius — what the findings would actually do",
-             fontsize=18, color=GRAY_400, fontweight="500", fontfamily=_FONT)
+             fontsize=13, color=GRAY_400, fontweight="500", fontfamily=_FONT)
     fig.text(0.96, 0.95, f"{100 * a / n:.1f}%",
              fontsize=28, color=GRAY_900, ha="right",
              fontweight="800", fontfamily=_FONT)
@@ -460,7 +460,7 @@ def chart_locations(locs, out: Path) -> None:
         ax.text(max_total * 1.02, y, str(x), va="center", fontsize=13,
                 color=GRAY_500, fontweight="600", fontfamily=_FONT)
     ax.set_yticks(list(ys))
-    ax.set_yticklabels(order, fontsize=17, color=GRAY_900, fontweight="600",
+    ax.set_yticklabels(order, fontsize=16, color=GRAY_900, fontweight="600",
                        fontfamily=_FONT)
     from matplotlib.patches import Patch
     ax.legend(
@@ -527,7 +527,7 @@ def chart_comparison(pops, out: Path) -> None:
             _rounded_bar(ax, 0, y - bar_h / 2, bar_w, bar_h, color)
             # Place all labels at a fixed x position to avoid overlap
             ax.text(103, y, f"{val:.1f}",
-                    va="center", fontsize=12, color=GRAY_500,
+                    va="center", fontsize=14, color=GRAY_500,
                     fontweight="600", fontfamily=_FONT)
     ax.legend(
         handles=[Patch(facecolor=c, edgecolor="none", label=f"{l} (n={n})")
@@ -594,7 +594,7 @@ def chart_market_census(queries: dict, out: Path) -> None:
                 color=GRAY_900, fontweight="700", fontfamily=_FONT)
     ax.set_yticks(list(ys))
     ax.set_yticklabels([l.replace("built with ", "").replace("topic:", "topic·")
-                        for l, _ in items], fontsize=14, color=GRAY_900,
+                        for l, _ in items], fontsize=16, color=GRAY_900,
                        fontweight="500", fontfamily=_FONT)
     from matplotlib.patches import Patch
     ax.legend(
